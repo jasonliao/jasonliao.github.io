@@ -5,6 +5,7 @@
 	font-style: normal;
 }
 *{
+    font-family: 'Amatic SC';
     color: #fff;
     margin: 0;
     padding: 0;
@@ -24,7 +25,7 @@
     left: 50%;
 }
 #title h1{
-    font-family: "Amatic SC";
+    font-family: 'Amatic SC';
     text-align: center;
     font-size: 6em;
 }
@@ -35,7 +36,7 @@
     margin-top: -33px;
 }
 #title h2{
-    font-family: "Amatic SC";
+    font-family: 'Amatic SC';
     text-align: center;
     font-size: 2.1em;
     margin-top: -15px;
