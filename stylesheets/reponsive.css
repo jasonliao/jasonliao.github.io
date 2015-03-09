@@ -1,3 +1,4 @@
+/* 768px ~ 992px的样式 */
 @media (max-width: 992px) {
     #header,#overlay {
         height: 300px;
@@ -7,15 +8,15 @@
         margin-left: -370px;
     }
     #title h1{
-        font-size: 4.2em;
+        font-size: 5em;
     }
     #title h2{
-        font-size: 1.6em;
+        font-size: 1.8em;
         margin-top: -15px;
     }
     #split{
-        margin-left: 250px;
-        margin-top: -27px;
+        margin-left: 220px;
+        margin-top: -28px;
     }
     #nav, #title{
         width: 740px;
@@ -32,15 +33,15 @@
         margin-left: -150px;
     }
     #title h1{
-        font-size: 3.3em;
+        font-size: 4em;
     }
     #title h2{
-        font-size: 1.25em;
+        font-size: 1.4em;
         margin-top: -15px;
     }
     #split{
-        margin-left: 199px;
-        margin-top: -22px;
+        margin-left: 170px;
+        margin-top: -23px;
     }
     #menu{
         display: none;

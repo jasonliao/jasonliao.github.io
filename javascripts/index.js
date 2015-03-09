@@ -40,8 +40,10 @@ $(document).ready(function(){
                 'easeInBack',
                 function(){
                     $("#HMDDBox").css("display","none");
+                    $("#Hmenu").attr("src", "images/menu.png");
                 }
             );
+           
         }
     })
 })
