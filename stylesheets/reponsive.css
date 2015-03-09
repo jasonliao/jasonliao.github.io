@@ -1,0 +1,61 @@
+@media (max-width: 992px) {
+    #header,#overlay {
+        height: 300px;
+    }
+    #title {
+        top: 100px;
+        margin-left: -370px;
+    }
+    #title h1{
+        font-size: 4.2em;
+    }
+    #title h2{
+        font-size: 1.6em;
+        margin-top: -15px;
+    }
+    #split{
+        margin-left: 250px;
+        margin-top: -27px;
+    }
+    #nav, #title{
+        width: 740px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header,#overlay {
+        height: 220px;
+    }
+    #title {
+        width: 300px;
+        top: 65px;
+        margin-left: -150px;
+    }
+    #title h1{
+        font-size: 3.3em;
+    }
+    #title h2{
+        font-size: 1.25em;
+        margin-top: -15px;
+    }
+    #split{
+        margin-left: 199px;
+        margin-top: -22px;
+    }
+    #menu{
+        display: none;
+    }
+    #Hmenu{
+        display: block
+    }
+    #logo {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        margin: 10px 0 0 20px;
+    }
+    #navmenu, #nav, #navoverlay {
+        width: 100%;
+        height: 50px;
+    }
+}
