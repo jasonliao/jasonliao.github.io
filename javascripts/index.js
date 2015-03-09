@@ -27,6 +27,7 @@ $(document).ready(function(){
     $("#Hmenu").click(function(){
         var HMDDBox =  $("#HMDDBox").css("display");
         if(HMDDBox == "none"){
+            $("#Hmenu").attr("src", "images/menu1.png");
             $("#HMDDBox").css("display","block");
             $("#HMDD").animate(
                 {top: 0},
