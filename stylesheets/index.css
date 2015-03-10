@@ -16,6 +16,7 @@
     background: #48535f url('../images/bg.jpg');
     background-size: cover;
     position: relative;
+    z-index: 9;
 }
 #title {
     position: absolute;
@@ -48,15 +49,13 @@
     width: 100%;
     height: 440px;
     opacity: 0;
-    z-index: 3
 }
-
 #navmenu{
     width: 100%;
     height: 70px;
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 10;
 }
 #navoverlay{
     width: 100%;
@@ -64,12 +63,12 @@
     position: fixed;
     top: 0;
     background: #48535f;
+    z-index: 9;
 }
 #nav {
     height: 70px;
     width: 960px;
     margin: 0 auto;
-    z-index: 9
 }
 #logo {
     width: 50px;
@@ -158,13 +157,65 @@
     margin: 30px auto;
     text-align: center;
 }
-#container a {
+#container .item {
     max-width: 48%;
+    position: relative;
     display: inline-block;
     margin: 5px;
+    padding: 0;
 }
-#container a img {
+#container .item img {
     width: 100%;
+}
+.item-hover, .mask {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 4px);
+    top: 0;
+    left: 0;
+}
+.headline {
+    font-size: 350%;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    width: 100%;
+    left: 50%;
+    top: 20%;
+    margin-left: -50%;
+    transition: opacity 0.3s ease-out;
+}
+.line {
+    width:8%;
+    height: 1px;
+    background: #fff;
+    margin: 15px auto;
+    transition: width 0.5s ease-out;
+}
+.postNum {
+    position: absolute;
+    width: 100%;
+    font-size: 350%;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    z-index: 3;
+    top: 53%;
+}
+.mask {
+    height: 100%;
+    background: #48535f;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.4s ease-out;
+}
+.item-hover:hover .mask {
+    opacity: 0.6;   
+}
+.item-hover:hover .line {
+    width: 30%
+}
+.item-hover:hover .headline, .item-hover:hover .postNum {
+    opacity: 1;  
 }
 #footer{
     width: 100%;
