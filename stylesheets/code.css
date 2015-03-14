@@ -1,0 +1,16 @@
+#title {
+    top: 160px;
+}
+#title h1 {
+    font-size: 4em;
+    line-height: 1em;
+}
+#split{
+    color: #42afe3;
+    display: block;
+    margin-left: 410px;
+    margin-top: -65px;
+}
+#container {
+    height: 1000px;
+}

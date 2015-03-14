@@ -1,0 +1,26 @@
+/* 768px ~ 992px的样式 */
+@media (max-width: 992px) {
+    #title {
+        top: 120px;
+    }
+    #title h1{
+        font-size: 3em;
+    }   
+    #split{
+        margin-left: 310px;
+        margin-top: -48px;
+    }
+}
+/* 小于768px的样式 */
+@media (max-width: 768px) {
+    #title {
+        top: 75px;
+    }
+    #title h1 {
+        font-size: 2.3em;
+    }
+    #split {
+        margin-left: 240px;
+        margin-top: -37px;
+    }
+}

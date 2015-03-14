@@ -1,0 +1,40 @@
+/* 768px ~ 992px的样式 */
+@media (max-width: 992px) {
+    #header,#overlay {
+        height: 300px;
+    }
+    #title {
+        top: 100px;
+        margin-left: -370px;
+    }
+    #nav, #title{
+        width: 740px;
+    }
+}
+/* 小于768px的样式 */
+@media (max-width: 768px) {
+    #header,#overlay {
+        height: 220px;
+    }
+    #title {
+        width: 300px;
+        top: 55px;
+        margin-left: -150px;
+    }
+    #menu {
+        display: none;
+    }
+    #Hmenu {
+        display: block
+    }
+    #logo {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        margin: 10px 0 0 20px;
+    }
+    #navmenu, #nav, #navoverlay {
+        width: 100%;
+        height: 50px;
+    }
+}
