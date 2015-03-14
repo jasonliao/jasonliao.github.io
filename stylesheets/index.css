@@ -4,6 +4,12 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'cn TC';
+	src: url('../fonts/cn-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 *{
     font-family: 'Amatic SC';
     color: #fff;
@@ -148,13 +154,10 @@
     color: #42afe3;
     transition: color 0.5s;
 }
-#contain{
-    width: 100%;
-}
-#container {
+#container, #foreword {
     width: 96%;
     max-width: 960px;
-    margin: 30px auto;
+    margin: 50px auto;
     text-align: center;
 }
 #container .item {
@@ -217,8 +220,31 @@
 .item-hover:hover .headline, .item-hover:hover .postNum {
     opacity: 1;  
 }
+#foreword {
+    margin: 100px auto 50pxs;
+}
+#lcs, .words {
+    font-family: 'cn TC';
+    font-weight: 580
+}
+#lcs {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.words {
+    color: #444;
+    line-height: 1.5em;
+    font-size: 155%;
+}
 #footer{
     width: 100%;
     height: 80px;
-    background: #48535f
+    background: #48535f;
 }
+
+
+
+
+
