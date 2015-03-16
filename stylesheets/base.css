@@ -147,3 +147,10 @@
     height: 80px;
     background: #48535f;
 }
+#copyright {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    line-height: 80px;
+    font-size: 1.5em;
+}
