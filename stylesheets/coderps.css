@@ -7,8 +7,8 @@
         font-size: 3em;
     }   
     #split{
-        margin-left: 310px;
-        margin-top: -48px;
+        margin-left: 308px;
+        margin-top: -49px;
     }
 }
 /* 小于768px的样式 */
@@ -20,7 +20,7 @@
         font-size: 2.3em;
     }
     #split {
-        margin-left: 240px;
+        margin-left: 235px;
         margin-top: -37px;
     }
 }

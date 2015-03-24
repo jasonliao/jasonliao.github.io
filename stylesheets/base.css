@@ -5,12 +5,21 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'Amatic SCB';
+	src: url('../fonts/AmaticSC-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
 *{
     font-family: 'Amatic SC';
     color: #fff;
     margin: 0;
     padding: 0;
     font-weight: normal
+}
+body {
+    background: #f9f9f9;
 }
 #header {
     width: 100%;
@@ -143,6 +152,7 @@
     transition: color 0.5s;
 }
 #footer{
+    clear: both;
     width: 100%;
     height: 80px;
     background: #48535f;
