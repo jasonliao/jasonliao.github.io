@@ -1,2 +1,4 @@
 # l-movingon.github.io
-My Blog
+
+Welcome to my blog :-)
+[l-movingon.github.io](http://l-movingon.github.io/)
