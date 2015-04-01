@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lmovingon - Code</title>
+    <script src="../javascripts/jquery-min.js"></script>
+    <script src="../javascripts/jquery.easing.1.3.js"></script>
+    <script src="../javascripts/index.js"></script>
+    <link rel="stylesheet" href="../stylesheets/base.css">
+    <link rel="stylesheet" href="../stylesheets/baserps.css">
+    <link rel="stylesheet" href="../stylesheets/code.css">
+    <link rel="stylesheet" href="../stylesheets/coderps.css">
+    <link rel = "Shortcut Icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../prettify/prettify.css">
+    <style>
+        .button {
+            display: block;
+            width: 80px;
+            height: 30px;
+            background: #C7E9FA;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.5s ;
+        }
+        .button:hover {
+            background: #76CBF3;
+        }
+    </style>
+</head>
+<body onload="prettyPrint()">
+    <div id="navmenu">
+       <div id="nav">
+            <a href="../index.html" id="logo"></a>
+            <ul id="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../code.html">Code</a></li>
+                <li><a href="https://l-movingon.github.com/resume">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+<!--            hanburger menu when the screen's width less than 768px-->
+            <img src="../images/menu.png" id="Hmenu">
+<!--            hanburget menu drop down -->
+            <div id="HMDDBox">
+                <ul id="HMDD">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../code.html">Code</a></li>
+                    <li><a href="https://l-movingon.github.com/resume">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="navoverlay"></div>
+    <div id="header">
+        <div id="title">
+            <h1>GIVEN&nbsp;ENOUGH&nbsp;EYEBALLS</h1>
+            <h1>ALL&nbsp;BUGS&nbsp;ARE&nbsp;SHALLOW<span id="split">|</span></h1> 
+        </div>
+        <div id="overlay"></div>
+    </div>
+    <div id="container">
+        <div id="sideBar">
+            <ul><a class="linkhere" name="h5c3">HTML5 & CSS3</a>
+                <li><a href="why-we-still-need-web-safe-fonts.html">Why We Still Need Web-safe Fonts</a></li>
+                <li><a href="image-optimization.html">Image optimization</a></li>
+                <li><a href="7-tips-for-improving-your-user-interface-design.html">7 Tips For Improving Your User Interface Design</a></li>
+            </ul>
+            <ul><a class="linkhere" name="js">JavaScript</a>
+                <li><a href="about-closures.html">About Closures</a></li>
+                <li><a href="about-event-loop.html">About Event Loop</a></li>
+                <li><a href="''-string('')-new-string('').html">'', String(''), new String('')</a></li>
+                <li><a href="about-hoisting.html">About Hoisting</a></li>
+                <li><a href="about-this.html"  style="color: #209BD7">About This</a></li>
+            </ul>
+            <ul><a class="linkhere" name="ext">Ext js</a></ul>
+            <ul><a class="linkhere" name="react">React js</a>
+                <li><a href="#">Why you might not need MVC with React.js</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1>JavaScript小记 - This</h1>
+            <p style="font-weight: bold">this说，函数在哪里定义跟我没关系，函数在哪里调用才是我关心的 ：p</p>
+            <p>直接上例子</p>
+            <div class="codeHighLine">&nbsp;Code
+                <pre class="prettyprint linenums">
+var fullname = 'Jason';
+var obj = {
+    fullname: 'Julia';
+    prop: {
+        fullname: 'Brown',
+        getFullname: function() {
+            console.log(this.fullname);
+        }
+    }
+};
+
+obj.prop.getFullname();    //Brown
+var test =  obj.prop.getFullname;
+test();                    //Jason
+test.call(obj.prop);       //Brown
+test.call(obj);            //Julia
+</pre>
+            </div>
+            <p>第一个调用getFullname的是obj里的prop对象，所以打印的是Brown</p>
+            <p>第二个把getFullname方法赋给了全局变量test，所以调用test方法的是window，所以打印的是Jason</p>
+            <p>第三个运用了call方法，把调用的对象改成了obj里的prop对象，所以结果和第一个相同</p>
+            <p>最后一个则是把调用对象改成了obj，所以打印出来的则是obj里的fullname，Julia</p>
+            <p>再来看看下面这个闭包调用</p>
+            <div class="codeHighLine">&nbsp;Code
+                <pre class="prettyprint linenums">
+var name = 'The Window';
+var  obj = {
+    name: 'My object',
+    getName: function() {
+        return function() {
+            console.log(this.name);
+        }
+    }
+};
+obj.getName()();    //The Window
+</pre>
+            </div>
+            <p>这个是JavaScript高级程序设计的一个例子，里面也很好的解释了为什么打印出来的为什么是The Window</p>
+            <p style="font-weight: bold">“每个函数在被调用时都会自动取得两人特殊变量：this和arguments。内部函数在搜索这两个变量时，只会搜索到其活动对象为止，因此永远不可能直接访问外部函数中的这两个变量”</p>
+            <p>在<a href="about-closures.html"> JavaScript小记 - 闭包 </a>这一篇文章里把活动对象以图的形式介绍了一下，就是闭包函数会在作用域链的作用下，一层一层的往上在活动对象里找到对应的变量</p>
+            <p>但this和arguments和其他变量不一样，是在调用时生成，所以不存在在该活动对象找不到的情况，这就是为什么“永远不可能直接访问外部函数中的这两个变量”</p>
+            <p>obj.getName()返回一个函数，然后立即执行，没有给其他任何对象调用，所以默认调用这个函数的就是window，所以他的活动对象就是window，所以打印出来的自然是The Window</p>
+            <p>又到了 “What is your answer” 的环节</p>
+            <div class="codeHighLine">&nbsp;Code
+                <pre class="prettyprint linenums">
+var length = 10;
+function foo() {
+    console.log(this.length);
+}
+var obj = {
+    length: 5,
+    method: function(foo) {
+        foo();
+        foo.call(this);
+        arguments[0]();
+    }
+};
+
+obj.method(foo,1);
+</pre>
+            </div>
+            <p style="font-weight: bold">this说，按F12就可以知道答案了</p>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="copyright">© Copyright&nbsp;2015&nbsp;&nbsp;Lmovingon</div>
+    </div>
+    <script src="../prettify/prettify.js"></script>
+    <script>
+        console.log("2015/04/01 :( ");
+    </script>
+</body>
+</html>
