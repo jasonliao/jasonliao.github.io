@@ -58,81 +58,90 @@
                 <li><a href="''-string('')-new-string('').html">'', String(''), new String('')</a></li>
                 <li><a href="about-hoisting.html">About Hoisting</a></li>
                 <li><a href="about-this.html">About This</a></li>
-                <li><a href="about-array-like.html"  style="color: #209BD7">About Array-like</a></li>
+                <li><a href="about-array-like.html">About Array-like</a></li>
             </ul>
             <ul><a class="linkhere" name="ext">Ext js</a>
-                <li><a href="ext-gridpanel-with-paging-upload.html">upload gridpanel with paging</a></li>
+                <li><a href="ext-gridpanel-with-paging-upload.html"  style="color: #209BD7">upload gridpanel with paging</a></li>
             </ul>
             <ul><a class="linkhere" name="react">React js</a>
                 <li><a href="#">Why you might not need MVC with React.js</a></li>
             </ul>
         </div>
         <div id="main">
-            <h1>JavaScript小记 - 类数组对象</h1>
-            <p>刚刚开始学JavaScript的时候，有人告诉我arguments是用来装参数的一个数组，但后来我看到了这一行代码</p>
+            <h1>Ext.js Tips - 更新带页脚的Gridpanel</h1>
+            <p>我想这个功能是非常常见的，就是Ext的gridpanel上会有若干个的输入框，一个按钮，点击用于过滤gridpanel里面的信息</p>
+            <p>但在实践的时候会发现几个问题：</p>
+            <p style="font-weight: bold">1. 怎么把用户输入的信息传给后台</p>
+            <p style="font-weight: bold">2. 如果传的值为中文，怎么修改默认的请求方式 </p>
+            <p style="font-weight: bold">3. 重新加载的时候，页脚的信息如何同时更新</p>
+            <p>Ext4采用的是MVC的开发模式(Ext5采用的是MVVM)，所以我们是要创建一个dataStore来装载我们的数据，下面我们一般创建store的代码</p>
             <div class="codeHighLine">&nbsp;Code
                 <pre class="prettyprint linenums">
-var args = Array.prototype.slice.call(arguments);
+var store = Ext.create('Ext.data.Store', {
+    fields: [],
+    proxy: {
+        type: 'ajax',
+        url: '',
+        reader: {
+            type: 'json',
+            root: 'list',
+            //后台返回的json对象里要包含totalProperty这个属性
+            //页脚用来计算一共有多少页(totalCount/pageSize)
+            totalProperty : "totalCount"    
+        }
+    },
+    autoLoad: true,
+    pageSize: 20    //每页加载多少条数据
+});
 </pre>
             </div>
-            <p>这行代码就是把argument真正的数组化，那原来的他是什么呢，他就是类数组对象(Array-like)</p>
-            <p style="font-weight: bold">那什么是类数组对象</p>
-            <p style="font-weight: bold">1. 他们都有一个合法的length属性(不超过范围的正整数)</p>
-            <p style="font-weight: bold">2. length属性的值大于他们的最大索引</p>
-            <p>那string看来也是 看看下面代码执行的情况</p>
+            <p>那怎么动态再把用户输入的信息作为参数通过这个store传给后台呢? 我们可以在'查询'这个按钮上加一个handler，在这里加入下面代码</p>
             <div class="codeHighLine">&nbsp;Code
                 <pre class="prettyprint linenums">
-var s = 'string';
-var newS = Array.prototype.slice.call(s);
-console.log(newS);    // ['s','t','r','i','n','g']
-</pre>
-            </div>
-            <p>可以看出Array的slice方法是把传进去的对象的索引值一个一个的放进去一个数组里，我们可以模拟一下这个方法的实现，但别忘了这个方法原来的作用</p>
-            <div class="codeHighLine">&nbsp;Code
-                <pre class="prettyprint linenums">
-function ownSlice(start, end) {
-    start = start || 0;
-    end = end || this.length;
-    var result = [];
-    for(var i = start; i &lt; end; i++) {
-        result.push(this[i]);
+store.load({
+    params : {
+        'params1' : xxx,
+        'params2' : xxx
     }
-    console.log(result);
-}
-
-ownSlice.call('string');    // ['s','t','r','i','n','g']
+});
 </pre>
             </div>
-            <p>我们还可以利用类数组对象来完成一些功能，例如可以扩展字符串的repeat方法</p>
+            <p>这样store不仅仅会把分页查询的参数(start,limit,page)自动传过去，还会把你的params对象里的参数传过去</p>
+            <p>但如果我们的参数是中文，或者我们的请求需要是POST，则要在我们的store里加入actionMethods这个对象</p>
             <div class="codeHighLine">&nbsp;Code
                 <pre class="prettyprint linenums">
-function repeat(target, n) {
-    return Array.prototype.join.call({
-        length : n + 1
-    }, target);
+actionMethods : {
+    create : 'POST',
+    read : 'POST',    //befault GET
+    update ： 'POST',
+    destroy : 'POST'
 }
-
-repeat('str', 3);    // strstrstr
 </pre>
             </div>
-            <p>然后我又模拟了一下join方法和实现</p>
+            <p>因为我们平时请求默认是read，而他的默认方法是GET，所以需要用上面代码更改</p>
+            <p>到现在为止，我们可以为store增加参数发送请求，也可以使用POST防止中文的乱码情况，但是还有最后一个问题，我们在重新加载store之后，gridpanel和页脚的信息都是对的，但是当你点击下一页的时候，问题就会出现，因为点击页脚下一页的时候，同样会调用store的load方法，但是此时的参数就仅有分页查询的参数(start,limit,page)，用户输入的参数就不会传过去，那要怎么办呢？</p>
+            <p>所以就可以在store里增加监听，在load方法调用之前，先把用户输入的东西拿到，每次load的时候，都作为附加参数传过去，那，怎么做？</p>
             <div class="codeHighLine">&nbsp;Code
                 <pre class="prettyprint linenums">
-function ownJoin(separator) {
-    var result = this[0] || '',
-        length = this.length,
-        i = 1;
-    separator = separator !== ''? separator || ',' : separator;
-    
-    for(; i &lt; length; i++) {
-        result += separator;
-        result += this[i] || '';
+listeners: {
+    beforeload: function() {
+        // 拿到用户输入的内容  放到下面这个对象里
+        this.proxy.extraParams = {
+            'params1' : xxx,
+            'params2' : xxx
+        };
     }
-    return result;
 }
 </pre>
             </div>
-            <p>最后发现我其实都不是在讲类数组，是不是又骗了你们进来 :-(</p>
+            <p>这样，我们就可以在每次load的时候把用户输入的内容一起传到后台，这样我们在'查询'按钮的handler里只用写简简单单的一句代码</p>
+            <div class="codeHighLine">&nbsp;Code
+                <pre class="prettyprint linenums">
+store.load();
+</pre>
+            </div>
+            <p>这个时候后台和前端要配合一下，如果用户什么都不输入，就返回全部就可以啦</p>
+            <p>如果有什么错误，或者有什么其他方法，都可以联系我喔 :-)</p>
         </div>
     </div>
     <div id="footer">
