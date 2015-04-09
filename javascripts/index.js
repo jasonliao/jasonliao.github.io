@@ -18,22 +18,22 @@ $(document).ready(function () {
 //    });
     
     $("#Hmenu").mouseover(function () {
-        $(this).attr("src", "/l-movingon.github.io/images/menu1.png");
+        $(this).attr("src", "/images/menu1.png");
     });
-    
+   
     $("#Hmenu").mouseout(function () {
         var HMDDBox =  $("#HMDDBox").css("display");
         if (HMDDBox == "none") {
-            $(this).attr("src", "/l-movingon.github.io/images/menu.png");
+            $(this).attr("src", "/images/menu.png");
         } else {
-            $(this).attr("src", "/l-movingon.github.io/images/menu1.png");
+            $(this).attr("src", "/images/menu1.png");
         }
     });
     
     $("#Hmenu").click(function () {
         var HMDDBox =  $("#HMDDBox").css("display");
         if (HMDDBox == "none") {
-            $("#Hmenu").attr("src", "/l-movingon.github.io/images/menu1.png");
+            $("#Hmenu").attr("src", "/images/menu1.png");
             $("#HMDDBox").css("display", "block");
             $("#HMDD").animate(
                 {top: 0},
@@ -47,7 +47,7 @@ $(document).ready(function () {
                 'easeInBack',
                 function () {
                     $("#HMDDBox").css("display", "none");
-                    $("#Hmenu").attr("src", "/l-movingon.github.io/images/menu.png");
+                    $("#Hmenu").attr("src", "/images/menu.png");
                 }
             );
         }
