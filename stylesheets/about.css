@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    background: #F2F2F2;
+}
+.left {
+    width: 350px;
+    float: left;
+    height: 100%;
+    background: #484848;
+    position: fixed;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.left ul {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0 0 35px;
+    padding: 0;
+}
+.left ul li {
+    height: 40px;
+    line-height: 40px;
+}
+.left ul li a {
+    display: block;
+    font-size: 1em;
+    color: #F2F2F2;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+.left ul li a:hover {
+    color: #42afe3;
+}
+
+#about {
+    color: #42afe3;
+}
+
+.right {
+    float: left;
+    margin: 100px 0 100px 430px;
+    width: 55%;
+}
+.right h1 {
+    color: #505050
+}
+
+.right p {
+    line-height: 1.8em;
+    letter-spacing: 1px
+}
+
+.section {
+    padding-bottom: 40px;
+    border-bottom: 1px #CCC solid;
+    margin-bottom: 80px;
+}
+.section img {
+    width: 100%;
+}
+.bold {
+    font-weight: bold;
+}
+
+#skillContainer {
+    width: 96%;
+    margin: 0 auto;
+}
+#skillContainer img {
+    width: 120px;
+    margin: 20px 0 0 50px;
+}
