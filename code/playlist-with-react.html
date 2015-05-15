@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lmovingon - Code</title>
+    <script src="../javascripts/jquery-min.js"></script>
+    <script src="../javascripts/jquery.easing.1.3.js"></script>
+    <script src="../javascripts/index.js"></script>
+    <link rel="stylesheet" href="../stylesheets/base.css">
+    <link rel="stylesheet" href="../stylesheets/baserps.css">
+    <link rel="stylesheet" href="../stylesheets/code.css">
+    <link rel="stylesheet" href="../stylesheets/coderps.css">
+    <link rel = "Shortcut Icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../prettify/prettify.css">
+</head>
+<body onload="prettyPrint()">
+    <div id="navmenu">
+       <div id="nav">
+            <a href="../index.html" id="logo"></a>
+            <ul id="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../code.html">Code</a></li>
+                <li><a href="https://l-movingon.github.com/resume">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+<!--            hanburger menu when the screen's width less than 768px-->
+            <img src="../images/menu.png" id="Hmenu">
+<!--            hanburget menu drop down -->
+            <div id="HMDDBox">
+                <ul id="HMDD">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../code.html">Code</a></li>
+                    <li><a href="https://l-movingon.github.com/resume">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="navoverlay"></div>
+    <div id="header">
+        <div id="title">
+            <h1>GIVEN&nbsp;ENOUGH&nbsp;EYEBALLS</h1>
+            <h1>ALL&nbsp;BUGS&nbsp;ARE&nbsp;SHALLOW<span id="split">|</span></h1> 
+        </div>
+        <div id="overlay"></div>
+    </div>
+    <div id="container">
+        <div id="sideBar">
+            <ul><a class="linkhere" name="h5c3">HTML5 & CSS3</a>
+                <li><a href="why-we-still-need-web-safe-fonts.html">Why We Still Need Web-safe Fonts</a></li>
+                <li><a href="image-optimization.html">Image optimization</a></li>
+                <li><a href="7-tips-for-improving-your-user-interface-design.html">7 Tips For Improving Your User Interface Design</a></li>
+                <li><a href="what-is-the-dom.html">What is the DOM</a></li>
+            </ul>
+            <ul><a class="linkhere" name="js">JavaScript</a>
+                <li><a href="about-closures.html">About Closures</a></li>
+                <li><a href="about-event-loop.html">About Event Loop</a></li>
+                <li><a href="''-string('')-new-string('').html">'', String(''), new String('')</a></li>
+                <li><a href="about-hoisting.html">About Hoisting</a></li>
+                <li><a href="about-this.html">About This</a></li>
+                <li><a href="about-array-like.html">About Array-like</a></li>
+                <li><a href="singleton-pattern.html">singleton pattern</a></li>
+                <li><a href="getter-and-setter.html">getter and setter</a></li>
+                <li><a href="i-am-totally-new-to-node-js.html">Hi, I'm totally new to Node.js</a></li>
+            </ul>
+            <ul><a class="linkhere" name="ext">Ext js</a>
+                <li><a href="ext-gridpanel-with-paging-upload.html">upload gridpanel with paging</a></li>
+            </ul>
+            <ul><a class="linkhere" name="react">React js</a>
+                <li><a href="playlist-with-react.html" style="color: #209BD7">Playlist with react</a></li>
+            </ul>
+        </div>
+        <div id="main">
+           <h1>PlayList with React</h1>
+					 <p>2月份开始接触React.js，当时是为了以后学习React Native，接触一下移动端，现在IOS端开源了，但只能在OSX下开发，Android端好像在10月才开源</p>
+					 <p>首先说一下我觉得学习 React.js 时的几个要点</p>
+					 <p>1. 使用了类似XML的JSX语法来构建组件</p>
+					 <p>2. render()、getInitialState()、setState()方法</p>
+					 <p>3. ref属性(通过this.refs.xxx.getDOMNode()获得组件DOM节点)</p>
+					 <p>4. 在组件里添加样式，或者用className定义类</p>
+					 <p>5. props and state</p>
+					 <p style="font-weight: bold">6. 数据从父到子地传递，事件触发从子到父地传递</p>
+					 <h3>Getting Started</h3>
+					 <br><br>
+					 <p>当然是到官网里看啦 <a href="https://facebook.github.io/react/docs/getting-started.html">Getting Started</a></p>
+					 <p>在官网里跟着例子做一遍，就基本清楚了语法了，这时就要看 <a href="https://facebook.github.io/react/blog/2013/11/05/thinking-in-react.html">Thinking in React</a></p>
+					 <p>里面说到，只要搞清了你要做的东西的结构，事情就会变得很简单，下面我用一个小demo来解释一下前面说的几个要点</p>
+					 <p>完整代码在 <a href="https://github.com/L-movingon/CodeBlocks/tree/master/Reactjs">这里</a></p>
+					 <img src="playlist-with-react/playlist.jpg" alt="playlist-with-react" style="width: 85%">
+					 <br><br>
+					 <p>这就是我们最后出来的效果，现在我们要把他的结构弄清楚，这样就有助于我们的组件化</p>
+					 <img src="playlist-with-react/playlist-struct.jpg" alt="playlist-with-react" style="width: 85%">
+					 <br><br>
+					 <p>我把每个组件都用不同的色框了出来，也写下了对应颜色的组件名，也可以从中看到他们的父子关系，现在我们就可以开始写我们的代码了</p>
+					 <h3>要点1</h3>
+					 <br>
+					 <p>React.js用了JSX语法，所以我们在引入JavaScript的时候有一个地方需要注意，type="text/jsx"</p>
+					 <p>同时我们在对body添加了一点点样式，还有创建一个<code class="code">&lt;div id="content"&gt;&lt;/div&gt;</code>用来装载我们的Container组件</p>
+           <h3>要点2 render() 和要点4</h3>
+					 <br>
+           <p>在 render 这个函数里主要是 return 一些 HTML 标签来构建我们的组件，里面可以包含正常的 HTML 标签，也可以是我们自己构建的一些组件，同时也可以在里面定义 style 变量，用于对组件的样式修改，也可以用 className 来定义类。在构建组件的时候，可以传递一些我们自己定义的属性，并用 {} 来存放，至于 props 和 state ，我们后面会慢慢说到，当然啦，以上说的在官网里的 Getting Started 也会说到。</p>
+           <h3>要点5 和 要点2 getInitialState()、setState()</h3>
+           <br>
+           <p>在创建组件的时候，我们传递的自己定义的所有属性就会被包裹成一个叫 props 的对象，这样我们就可以在组件里通过 this.props.xxx 来调用</p>
+           <p>那 state 对象又是什么呢，这个对象就是我们的 getInitialState() 这个函数返回的那个对象，这个函数里装载的属性都是一些会根据用户的操作而改变的一些属性。用户执行某个操作，把会影响到的属性放到 setState() 里更新值，然后 React 就会帮你执行DOM操作</p>
+           <h3>要点3</h3>
+           <br>
+           <p>有时候我们需要获取、修改 DOM 节点里的值的时候，就可以为我们的 DOM 节点加一个 ref 属性，然后我们就可以通过 this.refs.xxx.getDOMNode() 得到 DOM 节点，然后进行 innerHTML 或者 value 等操作</p>
+           <h3>要点6</h3>
+           <br>
+           <p>重点总是留到最后，数据从父到子地传递，事件触发从子到父地传递，怎么理解这句话，举个例子就知道</p>
+           <p style="font-weight: bold">事件触发从子到父地传递</p>
+           <p>当我们点击左边 Playlist 的时候，有哪些组件发生了改变</p>
+           <p> Main 里的 h3 、 Tracks 、 Section </p>
+           <p>这时点击事件就要向父传递，传递到能够覆盖所有响应的组件的组件， Playlist 向上到 SideBar ， SideBar 不可以覆盖 Main ，继续往上， SideBar 向上到 Container ， Container 可以覆盖 Main ，ok，在 Container 里执行 setState() ，把用户选中的那个 data 对象更新</p>
+           <p style="font-weight: bold">数据从父到子地传递</p>
+           <p>在 Contanier 里更新的那个对象用属性 playlist 传给 Main ， Main 获得 this.props.playlist 对象</p>
+           <p> Main 用 this.props.playlist.playlistname 修改了 h3 ， Main 用属性 tracks={this.props.playlist.tracks} 向下传给了 Tracks ， Tracks 得到 this.props.tracks ，修改了 span 标签里 Tracks 的值， Main 用属性 data={this.props.playlist.data} 向下传给了 Section ， Section 得到 this.props.data ，修改了表格里的值</p>
+           <p>下面分享一下一些不错的 React 资源</p>
+           <h3>building robust web apps with react - Matt Hinchliffe</h3>
+           <br>
+           <p>
+             <a href="http://maketea.co.uk/2014/03/05/building-robust-web-apps-with-react-part-1.html">Part 1</a>
+             <a href="http://maketea.co.uk/2014/04/07/building-robust-web-apps-with-react-part-2.html">Part 2</a>
+             <a href="http://maketea.co.uk/2014/05/22/building-robust-web-apps-with-react-part-3.html">Part 3</a>
+             <a href="http://maketea.co.uk/2014/06/30/building-robust-web-apps-with-react-part-4.html">Part 4</a>
+           </p>
+           <h3>还有有很多入门的react-demo的repo</h3>
+           <br>
+           <p> <a href="https://github.com/ruanyf/react-demos">ruanyf/react-demos</a></p>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="copyright">© Copyright&nbsp;2015&nbsp;&nbsp;Lmovingon</div>
+    </div>
+</body>
+</html>
