@@ -59,11 +59,11 @@
                 <li><a href="''-string('')-new-string('').html">'', String(''), new String('')</a></li>
                 <li><a href="about-hoisting.html">About Hoisting</a></li>
                 <li><a href="about-this.html">About This</a></li>
-                <li><a href="about-array-like.html"  style="color: #209BD7">About Array-like</a></li>
+                <li><a href="about-array-like.html">About Array-like</a></li>
                 <li><a href="singleton-pattern.html">singleton pattern</a></li>
                 <li><a href="getter-and-setter.html">getter and setter</a></li>
                 <li><a href="i-am-totally-new-to-node-js.html">Hi, I'm totally new to Node.js</a></li>
-                <li><a href="node-js-in-action-note.html">Node.js in action note</a></li>
+                <li><a href="node-js-in-action-note.html" style="color: #209BD7">Node.js in action note</a></li>
             </ul>
             <ul><a class="linkhere" name="ext">Ext js</a>
                 <li><a href="ext-gridpanel-with-paging-upload.html">upload gridpanel with paging</a></li>
@@ -73,72 +73,52 @@
             </ul>
         </div>
         <div id="main">
-            <h1>JavaScript小记 - 类数组对象</h1>
-            <p>刚刚开始学JavaScript的时候，有人告诉我arguments是用来装参数的一个数组，但后来我看到了这一行代码</p>
+            <h1>《Node.js in Action》小记 - Express</h1>
+            <p>Node.js in Action这本书在2013年出版，所以里面很多的代码在现在的环境跑起来都是跑不通的，下面我就会说说在我学习第八章Express的时候，遇到的那些坑</p>
+            <p>第八章一开始就以一个简单的应用 - Photo来教我们如何运用Express去渲染页面，去处理表单的上传，还有文件的下载</p>
+            <p>还有书中用的EJS，我都换成了jade</p>
+            <p style="font-weight: bold">Install the Express executable</p>
             <div class="codeHighLine">&nbsp;Code
                 <pre class="prettyprint linenums">
-var args = Array.prototype.slice.call(arguments);
+npm install -g express
 </pre>
             </div>
-            <p>这行代码就是把argument真正的数组化，那原来的他是什么呢，他就是类数组对象(Array-like)</p>
-            <p style="font-weight: bold">那什么是类数组对象</p>
-            <p style="font-weight: bold">1. 他们都有一个合法的length属性(不超过范围的正整数)</p>
-            <p style="font-weight: bold">2. length属性的值大于他们的最大索引</p>
-            <p>那string看来也是 看看下面代码执行的情况</p>
+            <p>如果你还按书上这样安装，命令行还是会提示你：command not found，因为在4.x之后，你要这样</p>
             <div class="codeHighLine">&nbsp;Code
                 <pre class="prettyprint linenums">
-var s = 'string';
-var newS = Array.prototype.slice.call(s);
-console.log(newS);    // ['s','t','r','i','n','g']
+npm install -g express-generator
 </pre>
-            </div>
-            <p>可以看出Array的slice方法是把传进去的对象的索引值一个一个的放进去一个数组里，我们可以模拟一下这个方法的实现，但别忘了这个方法原来的作用</p>
-            <div class="codeHighLine">&nbsp;Code
-                <pre class="prettyprint linenums">
-function ownSlice(start, end) {
-    start = start || 0;
-    end = end || this.length;
-    var result = [];
-    for(var i = start; i &lt; end; i++) {
-        result.push(this[i]);
-    }
-    console.log(result);
-}
-
-ownSlice.call('string');    // ['s','t','r','i','n','g']
-</pre>
-            </div>
-            <p>我们还可以利用类数组对象来完成一些功能，例如可以扩展字符串的repeat方法</p>
-            <div class="codeHighLine">&nbsp;Code
-                <pre class="prettyprint linenums">
-function repeat(target, n) {
-    return Array.prototype.join.call({
-        length : n + 1
-    }, target);
-}
-
-repeat('str', 3);    // strstrstr
-</pre>
-            </div>
-            <p>然后我又模拟了一下join方法和实现</p>
-            <div class="codeHighLine">&nbsp;Code
-                <pre class="prettyprint linenums">
-function ownJoin(separator) {
-    var result = this[0] || '',
-        length = this.length,
-        i = 1;
-    separator = separator !== ''? separator || ',' : separator;
-    
-    for(; i &lt; length; i++) {
-        result += separator;
-        result += this[i] || '';
-    }
-    return result;
-}
-</pre>
-            </div>
-            <p>最后发现我其实都不是在讲类数组，是不是又骗了你们进来 :-(</p>
         </div>
+        <p>当你安装了Express之后，就可以执行</p>
+        <div class="codeHighLine">&nbsp;Code
+                <pre class="prettyprint linenums">
+express --help
+</pre>
+        </div>
+        <p>在4.x之后，options会少了很多，但这里要说的是 -css&lt;engine>竟然没有scss，<a href="http://stackoverflow.com/questions/23711897/get-sass-to-autocompile-with-nodejs-express-and-node-sass">Here is the resource</a></p>
+        <p style="font-weight: bold">Exploring the application</p>
+        <p>当你启动一个应用的时候，已经不是</p>
+        <div class="codeHighLine">&nbsp;Code
+                <pre class="prettyprint linenums">
+node app.js
+</pre>
+        </div>
+        <p>而是换成了</p>
+        <div class="codeHighLine">&nbsp;Code
+                <pre class="prettyprint linenums">
+node ./bin/www
+</pre>
+        </div>
+        <p>也就是不需要http的模块了，只要把app模块导出，用app.listen就可以了</p>
+        <p>书中的app.configure也已经被去掉了，可以直接使用app.set()</p>
+        <p>express.bodyParser已经换成了body-parser</p>
+        <p>express.cookieSession已经换成了cookie-session</p>
+        <p>express.cookieParser已经换成了cookie-parser</p>
+        <p>...</p>
+        <p>具体的改变还是要看这里吧 - <a href="http://expressjs.com/guide/migrating-4.html">Moving to Express 4</a></p>
+        <p>网上说，学习node.js要整天看文档，因为更新得很快</p>
+        <p>如果你也在这里被坑到，不知道怎么写下去，或者你也用想用jade去实现，可以看我对这个应用的实现，<a href="https://github.com/L-movingon/Everything-I-Learn/tree/master/nodejs/node-js-in-action/express/photo">Here!</a></p>
+        <p>如有错误，欢迎指正 : )</p>
     </div>
     <div id="footer">
         <div id="copyright">© Copyright&nbsp;2015&nbsp;&nbsp;Lmovingon</div>
