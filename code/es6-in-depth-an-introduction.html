@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lmovingon - Code</title>
+  <script src="../javascripts/jquery-min.js"></script>
+  <script src="../javascripts/jquery.easing.1.3.js"></script>
+  <script src="../javascripts/index.js"></script>
+  <link rel="stylesheet" href="../stylesheets/base.css">
+  <link rel="stylesheet" href="../stylesheets/baserps.css">
+  <link rel="stylesheet" href="../stylesheets/code.css">
+  <link rel="stylesheet" href="../stylesheets/coderps.css">
+  <link rel = "Shortcut Icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../prettify/prettify.css">
+</head>
+<body onload="prettyPrint()">
+  <div id="navmenu">
+   <div id="nav">
+      <a href="../index.html" id="logo"></a>
+      <ul id="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../code.html">Code</a></li>
+        <li><a href="https://l-movingon.github.com/resume">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+<!--            hanburger menu when the screen's width less than 768px-->
+      <img src="../images/menu.png" id="Hmenu">
+<!--            hanburget menu drop down -->
+      <div id="HMDDBox">
+        <ul id="HMDD">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../code.html">Code</a></li>
+          <li><a href="https://l-movingon.github.com/resume">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="navoverlay"></div>
+  <div id="header">
+    <div id="title">
+      <h1>GIVEN&nbsp;ENOUGH&nbsp;EYEBALLS</h1>
+      <h1>ALL&nbsp;BUGS&nbsp;ARE&nbsp;SHALLOW<span id="split">|</span></h1> 
+    </div>
+    <div id="overlay"></div>
+  </div>
+  <div id="container">
+    <div id="sideBar">
+      <ul><a class="linkhere" name="h5c3">HTML5 & CSS3</a>
+        <li><a href="why-we-still-need-web-safe-fonts.html">Why We Still Need Web-safe Fonts</a></li>
+        <li><a href="image-optimization.html">Image optimization</a></li>
+        <li><a href="7-tips-for-improving-your-user-interface-design.html">7 Tips For Improving Your User Interface Design</a></li>
+        <li><a href="what-is-the-dom.html">What is the DOM</a></li>
+      </ul>
+      <ul><a class="linkhere" name="js">JavaScript</a>
+        <li><a href="about-closures.html">About Closures</a></li>
+        <li><a href="about-event-loop.html">About Event Loop</a></li>
+        <li><a href="''-string('')-new-string('').html">'', String(''), new String('')</a></li>
+        <li><a href="about-hoisting.html">About Hoisting</a></li>
+        <li><a href="about-this.html">About This</a></li>
+        <li><a href="about-array-like.html">About Array-like</a></li>
+        <li><a href="singleton-pattern.html">singleton pattern</a></li>
+        <li><a href="getter-and-setter.html">getter and setter</a></li>
+        <li><a href="i-am-totally-new-to-node-js.html">Hi, I'm totally new to Node.js</a></li>
+				<li><a href="node-js-in-action-note.html">Node.js in action note</a></li>
+        <li><a href="array-prototype.html" style="color: #209BD7">Array.prototype.?</a></li>
+        <li><a href="es6-in-depth-an-introduction.html">ES6 in depth - An Introduction</a></li>
+      </ul>
+      <ul><a class="linkhere" name="ext">Ext js</a>
+        <li><a href="ext-gridpanel-with-paging-upload.html">upload gridpanel with paging</a></li>
+      </ul>
+      <ul><a class="linkhere" name="react">React js</a>
+        <li><a href="playlist-with-react.html">Playlist with react</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <h1>(译)ES6 in Depth - An Introduction</h1>
+      <p> 欢迎来到深入了解ES6，在这个新的系列里，我们将会探索即将到来的全新版本的JavaScript - ECMAScript 6，ES6有很多新的语言特性让JavaScript更加强大，也更具有表现力，我们也会在将下来的一个星期里把这些特性都了解一遍。但在我们真正开始之前，我想很有必要说说ES6究竟是什么和你可以期待得到什么。</p>
+      <p style="font-weight: bold">What falls under the scope of ECMAScript? (ECMAScript包含了什么)</p>
+      <p> JavaScript是由ECMA制定标准(ECMA是类似W3C那样的标准组织)并命名为ECMAScript。除此之外，ECMAScript还定义了:</p>
+      <p>1.语法 - 语法的规则，关键字，表述，声明，操作符等等</p>
+      <p>2.类型 - 布尔，数字，字符串，对象等等</p>
+      <p>3.原型和继承</p>
+      <p>4.内置对象 - JSON,Math,Array,Object introspection methods,等等。</p>
+      <p> 没有定义的是与HTML，CSS的操作，还有[Web APIs](https://developer.mozilla.org/en-US/docs/Web/API)，像DOM。那些都会有不同的标准，ECMAScript现在涵盖JavaScript的方面不仅仅停留在浏览器上，在像Node.js这样的非浏览器环境也有涉及。</p>
+      <p style="font-weight: bold">The new standard (新的标准)</p>
+      <p> 上一周，ECMAScript的详述最后一稿(即第六版)，已经交给ECMA大会进行审核。这意味着什么?</p>
+      <p>意味着这个夏天，我们将会迎来JavaScript语言全新的标准。</p>
+      <p> 这真是个大消息，JavaScript新标准可不常有。最近的一次，ES5，可以追溯到2009年。ES的标准委员会至今这止也一直致力于ES6。</p>
+      <p> ES6是一次大的升级，但同时，你的JavaScript代码依旧可以运用。在设计ES6的时候，对现存的代码有极大部分的兼容。事实上，很多浏览器已经开始支持很多ES6的特性，它们也在为实现功能而不断努力中。这意味着你的JavaScript代码已经可以在浏览器中实现一些ES6的特性！如果你现在看不到有不兼容的地方，那你以为也不会看到。</p>
+      <p style="font-weight: bold">Counting to 6 (数到6)</p>
+      <p>之前ECMAScript标准的版本都被命名为1，2，3，5。</p>
+      <p>版本4发生了什么事？事实上ECMAScript版本4曾被计划完成大量的工作，但最后却因为野心太大而被取消(真的，例如，在静态类型系统与泛型和类型的推断中进行选择)。</p>
+      <p>ES4是有争议的。当标准委员会最终停止了ES4，委员会成员同意发布相对温和的ES5然后开始发掘更本质的新特性。这个明确，经过协商后的决定被称为“和谐”，这也是为什么ES5的详述里包含了下面两句话：</p>
+      <p>"ECMAScript是一门充满生气的语言，而这门语言的革命还没有完成。在未来版本详述里你将会看到显著的技术提高。"</p>
+      <p>这个说明更像是一种承诺。</p>
+      <p style="font-weight: bold">Promises resolved (实现承诺)</p>
+      <p> ES5，2009年更新的版本，介绍了 Object.create() ， Object.defineProperty() ，getter 和 setter, 严格模式，还有JSON对象。我都用过这些特性和我喜欢ES5对这门语言的改变。但这些特性并没有对我写JavaScript代码的方式产生了很大的影响。对于我来说最大的改变大概就是数组的一些新方法例如 map ， filter 等等。</p>
+      <p> 但是！ES6不一样。这是多年的和谐工作的产物。和这是一个珍贵的新语言和库特性，是JavaScript最本质的升级，没有之一。这些新的特性还包含便捷性，从像arrow functions和简单的字符串操作，到全新的概念像代理和生成器。</p>
+      <p> ES6会改变你写JavaScript代码的方式。</p>
+      <p> 这个系列的目的就是通过对这些新的特性的检查，来展示给同为JavaScript开发者的你看。</p>
+      <p> 我们会以一个我希望在JavaScript中实现很多年的经典特性开始。希望你在下一周加入我们来看一看ES6的迭代器和新的 for-of 循环。</p>
+      <p>转自<a href="https://hacks.mozilla.org/2015/04/es6-in-depth-an-introduction/">https://hacks.mozilla.org/2015/04/es6-in-depth-an-introduction/</a></p>
+      <p>如有错误, 欢迎指正 : )</p>
+    </div>
+  </div>
+  <div id="footer">
+      <div id="copyright">© Copyright&nbsp;2015&nbsp;&nbsp;Lmovingon</div>
+  </div>
+  <script src="../prettify/prettify.js"></script>
+</body>
+</html>
