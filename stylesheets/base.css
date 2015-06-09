@@ -164,3 +164,6 @@ body {
     line-height: 80px;
     font-size: 1.5em;
 }
+.commentBox a {
+  color: #48535f;
+}

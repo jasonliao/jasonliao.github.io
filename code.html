@@ -1,132 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lmovingon - Code</title>
-    <script src="javascripts/jquery-min.js"></script>
-    <script src="javascripts/jquery.easing.1.3.js"></script>
-    <script src="javascripts/index.js"></script>
-    <link rel="stylesheet" href="stylesheets/base.css">
-    <link rel="stylesheet" href="stylesheets/baserps.css">
-    <link rel="stylesheet" href="stylesheets/code.css">
-    <link rel="stylesheet" href="stylesheets/coderps.css">
-    <link rel = "Shortcut Icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="prettify/prettify.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lmovingon - Code</title>
+  <script src="javascripts/jquery-min.js"></script>
+  <script src="javascripts/jquery.easing.1.3.js"></script>
+  <script src="javascripts/index.js"></script>
+  <link rel="stylesheet" href="stylesheets/base.css">
+  <link rel="stylesheet" href="stylesheets/baserps.css">
+  <link rel="stylesheet" href="stylesheets/code.css">
+  <link rel="stylesheet" href="stylesheets/coderps.css">
+  <link rel="Shortcut Icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="prettify/prettify.css">
 </head>
 <body onload="prettyPrint()">
-    <div id="navmenu">
-       <div id="nav">
-            <a href="index.html" id="logo"></a>
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="code.html">Code</a></li>
-                <li><a href="about.html" target="_blank">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-<!--            hanburger menu when the screen's width less than 768px-->
-            <img src="images/menu.png" id="Hmenu">
-<!--            hanburget menu drop down -->
-            <div id="HMDDBox">
-                <ul id="HMDD">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="code.html">Code</a></li>
-                    <li><a href="about.html" target="_blank">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+  <div id="navmenu">
+    <div id="nav">
+      <a href="index.html" id="logo"></a>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="code.html">Code</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!--            hanburger menu when the screen's width less than 768px-->
+      <img src="images/menu.png" id="Hmenu">
+      <!--            hanburget menu drop down -->
+      <div id="HMDDBox">
+        <ul id="HMDD">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="about.html" target="_blank">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <div id="navoverlay"></div>
-    <div id="header">
-        <div id="title">
-            <h1>GIVEN&nbsp;ENOUGH&nbsp;EYEBALLS</h1>
-            <h1>ALL&nbsp;BUGS&nbsp;ARE&nbsp;SHALLOW<span id="split">|</span></h1> 
-        </div>
-        <div id="overlay"></div>
+  </div>
+  <div id="navoverlay"></div>
+  <div id="header">
+    <div id="title">
+      <h1>GIVEN&nbsp;ENOUGH&nbsp;EYEBALLS</h1>
+      <h1>ALL&nbsp;BUGS&nbsp;ARE&nbsp;SHALLOW<span id="split">|</span></h1>
     </div>
-    <div id="container">
-        <div id="sideBar">
-            <ul><a class="linkhere" name="h5c3">HTML5 & CSS3</a>
-                <li><a href="code/why-we-still-need-web-safe-fonts.html">Why We Still Need Web-safe Fonts</a></li>
-                <li><a href="code/image-optimization.html">Image optimization</a></li>
-                <li><a href="code/7-tips-for-improving-your-user-interface-design.html">7 Tips For Improving Your User Interface Design</a></li>
-                <li><a href="code/what-is-the-dom.html">What is the DOM</a></li>
-            </ul>
-            <ul><a class="linkhere" name="js">JavaScript</a>
-                <li><a href="code/about-closures.html">About Closures</a></li>
-                <li><a href="code/about-event-loop.html">About Event Loop</a></li>
-                <li><a href="code/''-string('')-new-string('').html">'', String(''), new String('')</a></li>
-                <li><a href="code/about-hoisting.html">About Hoisting</a></li>
-                <li><a href="code/about-this.html">About This</a></li>
-                <li><a href="code/about-array-like.html">About Array-like</a></li>
-                <li><a href="code/singleton-pattern.html">singleton pattern</a></li>
-                <li><a href="code/getter-and-setter.html">getter and setter</a></li>
-                <li><a href="code/i-am-totally-new-to-node-js.html">Hi, I'm totally new to Node.js</a></li>
-                <li><a href="code/node-js-in-action-note.html">Node.js in action note</a></li>
-                <li><a href="code/array-prototype.html">Array.prototype.?</a></li>
-                <li><a href="code/es6-in-depth-an-introduction.html">ES6 in depth - An Introduction</a></li>
-            </ul>
-            <ul><a class="linkhere" name="ext">Ext js</a>
-                <li><a href="code/ext-gridpanel-with-paging-upload.html">upload gridpanel with paging</a></li>
-            </ul>
-            <ul><a class="linkhere" name="react">React js</a>
-                <li><a href="code/playlist-with-react.html">Playlist with react</a></li>
-            </ul>
-        </div>
-        <div id="main">
-            <h1>Given enough eyeballs, all bugs are shallow</h1>
-            <p>只要吸引足够多的眼球, 所有问题都可以轻易解决</p>
-            <br>
-            <p>我们已经走过了小农经济时的自给自足和一战时期的相互竞争，在现在的信息时代，我想是一个分享、开源的时代。</p>
-            <br><br>
-            <p>Linux得到所有开发者的喜爱就是因为他的开源</p>
-            <p>开源浏览器Google Chrome是性能最好的浏览器</p>
-            <p>Google和微软共同打造 Angularjs 也表明了微软正在走向开放和开源</p>
-            <p>Apple 对开发者开放越来越多的API 让IOS更加具有开放性</p>
-            <p>...</p>
-            <br><br>
-            <h3>学习 创造 分享</h3>
-            <br><br>
-            <p>我大一开始接触前端 我喜爱前端</p>
-            <p>我不断地学习 不断地创造 把我想分享的东西放在这里</p>
-            <p>这里虽然没有精美的博文, 但却记录了我成长的一路</p>
-            <p>分享才可以吸引眼球 分享才可以完善 分享才可以进步</p>
-            <p>分享 只为得到一个更好的自己</p>
-            <div class="codeHighLine">&nbsp;Code
-            <pre class="prettyprint linenums">
+    <div id="overlay"></div>
+  </div>
+  <div id="container">
+    <div id="sideBar">
+      <ul><a class="linkhere" name="h5c3">HTML5 & CSS3</a>
+        <li><a href="code/why-we-still-need-web-safe-fonts.html">Why We Still Need Web-safe Fonts</a></li>
+        <li><a href="code/image-optimization.html">Image optimization</a></li>
+        <li><a href="code/7-tips-for-improving-your-user-interface-design.html">7 Tips For Improving Your User Interface Design</a></li>
+        <li><a href="code/what-is-the-dom.html">What is the DOM</a></li>
+      </ul>
+      <ul><a class="linkhere" name="js">JavaScript</a>
+        <li><a href="code/about-closures.html">About Closures</a></li>
+        <li><a href="code/about-event-loop.html">About Event Loop</a></li>
+        <li><a href="code/''-string('')-new-string('').html">'', String(''), new String('')</a></li>
+        <li><a href="code/about-hoisting.html">About Hoisting</a></li>
+        <li><a href="code/about-this.html">About This</a></li>
+        <li><a href="code/about-array-like.html">About Array-like</a></li>
+        <li><a href="code/singleton-pattern.html">singleton pattern</a></li>
+        <li><a href="code/getter-and-setter.html">getter and setter</a></li>
+        <li><a href="code/i-am-totally-new-to-node-js.html">Hi, I'm totally new to Node.js</a></li>
+        <li><a href="code/node-js-in-action-note.html">Node.js in action note</a></li>
+        <li><a href="code/array-prototype.html">Array.prototype.?</a></li>
+        <li><a href="code/es6-in-depth-an-introduction.html">ES6 in depth - An Introduction</a></li>
+      </ul>
+      <ul><a class="linkhere" name="ext">Ext js</a>
+        <li><a href="code/ext-gridpanel-with-paging-upload.html">upload gridpanel with paging</a></li>
+      </ul>
+      <ul><a class="linkhere" name="react">React js</a>
+        <li><a href="code/playlist-with-react.html">Playlist with react</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <h1>Given enough eyeballs, all bugs are shallow</h1>
+      <p>只要吸引足够多的眼球, 所有问题都可以轻易解决</p>
+      <br>
+      <p>我们已经走过了小农经济时的自给自足和一战时期的相互竞争，在现在的信息时代，我想是一个分享、开源的时代。</p>
+      <br>
+      <br>
+      <p>Linux得到所有开发者的喜爱就是因为他的开源</p>
+      <p>开源浏览器Google Chrome是性能最好的浏览器</p>
+      <p>Google和微软共同打造 Angularjs 也表明了微软正在走向开放和开源</p>
+      <p>Apple 对开发者开放越来越多的API 让IOS更加具有开放性</p>
+      <p>...</p>
+      <br>
+      <br>
+      <h3>学习 创造 分享</h3>
+      <br>
+      <br>
+      <p>我大一开始接触前端 我喜爱前端</p>
+      <p>我不断地学习 不断地创造 把我想分享的东西放在这里</p>
+      <p>这里虽然没有精美的博文, 但却记录了我成长的一路</p>
+      <p>分享才可以吸引眼球 分享才可以完善 分享才可以进步</p>
+      <p>分享 只为得到一个更好的自己</p>
+      <div class="codeHighLine">&nbsp;Code
+        <pre class="prettyprint linenums">
 console.log("Hello,World!");</pre>
-            </div>
-            <div id="disqus_thread"></div>
-            <script type="text/javascript">
-                /* * * CONFIGURATION VARIABLES * * */
-                var disqus_shortname = 'lmovingon';
-                
-                /* * * DON'T EDIT BELOW THIS LINE * * */
-                (function() {
-                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-        </div>
+      </div>
+      <div class="commentBox">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          /* * * CONFIGURATION VARIABLES * * */
+          var disqus_shortname = 'lmovingon';
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      </div>
     </div>
-    <div id="footer">
-        <div id="copyright">© Copyright&nbsp;2015&nbsp;&nbsp;Lmovingon</div>
-    </div>
-    <script src="../prettify/prettify.js"></script>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = 'lmovingon';
-        
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script>
+  </div>
+  <div id="footer">
+    <div id="copyright">© Copyright&nbsp;2015&nbsp;&nbsp;Lmovingon</div>
+  </div>
+  <script src="../prettify/prettify.js"></script>
 </body>
 </html>
