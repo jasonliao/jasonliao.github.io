@@ -1,0 +1,28 @@
+.mod-code {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.mod-code h1 {
+  margin-bottom: 20px;
+  font-size: 231%;
+}
+
+.mod-code .posts {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e5e5e5;
+  overflow: hidden;
+  font-size: 108%;
+}
+
+.mod-code .posts .time {
+  width: 100px;
+  float: right;
+  text-align: right;
+  color: #7f7f7f;
+}
+
+.mod-code .posts .title {
+  width: 660px;
+  float: left;
+}

@@ -1,5 +1,47 @@
-# l-movingon.github.io
+![Jason's](title.png)
 
-Welcome to my blog :-)
+Just hit it! [Jason's](https://l-movingon.github.io/)
 
-[l-movingon.github.io](http://l-movingon.github.io/)
+```
+.
+├─ _includes
+│  ├─ footer.html
+│  ├─ head.html
+│  ├─ header.html
+├─ _layouts
+│  ├─ default.html
+│  ├─ post.html
+├─ _posts
+│  ├─ YEAR-MONTH-DATE-TITLE.md
+├─ _drafts
+│  ├─ YEAR-MONTH-DATE-TITLE.md
+├─ assets
+│  ├─ fonts
+│  │  ├─ DroidSerif.ttf
+│  │  ├─ socicon.ttf
+│  │  ├─ SonsieOne-Regular.ttf
+│  ├─ images
+│  │  ├─ bg.png
+│  │  ├─ favicon.ico
+│  ├─ stylesheets
+│  │  ├─ body.css
+│  │  ├─ code.css
+│  │  ├─ font.css
+│  │  ├─ footer.css
+│  │  ├─ header.css
+│  │  ├─ hightlight.css
+│  │  ├─ main.css
+│  │  ├─ paginator.css
+│  │  ├─ post.css
+│  │  ├─ scroll.css
+├─ _config.yml
+├─ 404.html
+├─ about.html
+├─ index.html
+├─ posts.html
+├─ README.md
+├─ title.png
+├─ .gitignore
+```
+
+Powered by jekyll

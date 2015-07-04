@@ -1,0 +1,21 @@
+title: "Jason's"
+
+description: 'Sharing makes better.'
+
+author: 'Jason Liao'
+
+author_email: lmovingon2014@gmail.com
+
+baseurl: /
+
+url: http://l-movingon.github.io/
+
+markdown: redcarpet
+
+permalink: /posts/:year-:month-:day-:title.html
+
+port: 4000
+
+paginate : 6
+
+source: .

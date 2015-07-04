@@ -1,0 +1,18 @@
+.mod-postlist section {
+  margin-bottom: 60px;
+}
+
+.mod-postlist section header {
+  margin-bottom: 10px;
+}
+
+.mod-postlist section header p {
+  line-height: 1;
+  color: #7f7f7f;
+  font-size: 93%;
+}
+
+.mod-postlist section header h1 {
+  font-weight: 400;
+  font-size: 197%;
+}

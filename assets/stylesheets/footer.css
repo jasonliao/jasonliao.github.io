@@ -1,0 +1,23 @@
+.mod-footer p {
+  padding-bottom: 50px;
+  line-height: 1;
+  text-align: center;
+  color: #3f3f3f;
+  margin: 0;
+}
+
+.mod-footer p small {
+  font-size: 100%;
+}
+
+.socicon {
+  font-family: 'socicon' !important;
+  font-size: 25px;
+  margin: 10px 15px;
+  display: inline-block;
+}
+
+.mod-social {
+  padding-top: 120px;
+  text-align: center;
+}

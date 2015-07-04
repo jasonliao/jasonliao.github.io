@@ -1,0 +1,42 @@
+.area-header {
+  position: relative;
+}
+
+.mod-header {
+  padding: 140px 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.mod-header h1 {
+  margin-bottom: 20px;
+  font-size: 700%;
+  font-family: 'Sonsie One', cursive;
+}
+
+.mod-header h2 {
+  font-size: 154%;
+  font-family: 'Droid Serif', serif;
+  color: #3f3f3f;
+  font-style:italic;
+}
+
+.mod-nav ul {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  padding-left: 0;
+  line-height: 1;
+  font-size: 108%;
+  list-style: none;
+}
+
+.mod-nav ul li {
+  padding-left: 40px;
+  float: left;
+}
+
+.mod-nav ul li a {
+  font-weight: bold;
+}
