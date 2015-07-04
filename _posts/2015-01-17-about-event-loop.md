@@ -10,7 +10,7 @@ summary: 简单介绍Event-Loop的工作原理
 
 Event Loop 是解决 JavaScript 单线程问题的一种运行机制
 
-![about-event-loop-1]({{ site.url }}assets/images/about-event-loop/about-event-loop-1.jpg)
+![about-event-loop-1]({{ site.url }}assets/images/about-event-loop/about-event-loop-1.png)
 
 当程序接受到了请求之后，就会把请求交给 Event Loop 然后继续往下执行，这样就不用等待请求返回，继续执行下面的代码，当 Event Loop 完成后会把结果返回给程序，程序再调用已经设定好的回调函数，完成任务
 

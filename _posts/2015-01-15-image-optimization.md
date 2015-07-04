@@ -40,7 +40,7 @@ Ctrl + C 复制到 Ps 中粘贴到一个文件上，为了对比，我粘贴了�
 
 把所有的直边调整好之后，再对比一下
 
-![image-optimization-7]({{ site.url }}assets/images/image-optimization/image-optimization-7.jpg)
+![image-optimization-7]({{ site.url }}assets/images/image-optimization/image-optimization-7.png)
 
 你会发现右边看起来锐利很多，而且更加的清晰
 
