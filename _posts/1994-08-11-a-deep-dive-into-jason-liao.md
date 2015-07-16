@@ -6,6 +6,8 @@ date: 1994-08-11
 summary: Understand me via this
 ---
 
+[Download my resume]({{ site.url }}/assets/Resume.pdf)
+
 ## 教育经历(Education)
 
 2013届广东工业大学计算机学院计算机科学与技术专业，曾在2013～2014学年获得优秀学生二等奖学金。从大一开始接触前端，是一名前端爱好者。同时加入TopView实验室并开始进行网页应用的项目开发，专注于前端，有良好的沟通能力和团队协作能力。
