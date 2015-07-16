@@ -6,7 +6,7 @@ date: 1994-08-11
 summary: Understand me via this
 ---
 
-[Download my resume]({{ site.url }}/assets/Resume.pdf)
+[Download my resume]({{ site.url }}assets/Resume.pdf)
 
 ## 教育经历(Education)
 
