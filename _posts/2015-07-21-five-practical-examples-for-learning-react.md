@@ -56,7 +56,7 @@ export defalut class Timer extends React.Component {
 
 every time you call your method, you should use `.bind(this)`.
 
-```javscript
+```javascript
 componentDidMount () {
   this.timer = setInterval(this.tick.bind(this), 50);
 }
