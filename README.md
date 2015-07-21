@@ -34,6 +34,7 @@ Just hit it! [Jason's](https://l-movingon.github.io/)
 │  │  ├─ paginator.css
 │  │  ├─ post.css
 │  │  ├─ scroll.css
+│  │  ├─ style.min.css
 ├─ _config.yml
 ├─ 404.html
 ├─ about.html
