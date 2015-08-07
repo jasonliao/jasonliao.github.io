@@ -1,7 +1,7 @@
 ---
 layout: post
 category: javascript
-title: Object Inherirance
+title: Object Inheritance
 date: 2015-08-06
 summary: JavaScript 中对象继承的几种方式和理解
 ---
@@ -172,7 +172,7 @@ var circle2 = Circle.create(10);
 ```javascript
 var Person = {
   create: function (age) {
-    var person = Object.create(Person);
+    var person = Object.create(this);
     person.age = age;
     return person;
   },
@@ -185,8 +185,9 @@ var Person = {
 
 var Student = Object.create(Person);
 Student.create = function (name, age) {
-  var student = Person.create(age);
+  var student = Object.create(this);
   student.name = name;
+  student.age = age;
   return student;
 };
 Student.sayName =  function () {
