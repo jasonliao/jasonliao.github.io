@@ -19,7 +19,7 @@ Reflux 给我们封装了一些方法和属性，可以让我们的数据和操�
 - 用 `Reflux.createStore()` 方法创建的 Store 可以添加一个 `listenables` 的属性，只要把我们的 Actions 放在里面，当我们执行 Actions 里的行动的时候，就会自动触发 Store 里的 `on"Actions"` 的方法，就这完成了 Actions -> Stores
 
 
-- 而在 Controller View 中，有 `Store.listen(fn)` 方法，只要 Store 执行了 `this.toggle()`，就会触发这个在 Controller View 里的 `fn` 函数，我们就可以在这个 `fn` 里改变 `state` 的值， Components 也会随之变化，这就完成了 Stores -> View Components
+- 而在 Controller View 中，有 `Store.listen(fn)` 方法，只要 Store 执行了 `this.trigger()`，就会触发这个在 Controller View 里的 `fn` 函数，我们就可以在这个 `fn` 里改变 `state` 的值， Components 也会随之变化，这就完成了 Stores -> View Components
 
 
 - 而在任意的 Components 内直接触发 Actions 的行动，就可以完成 View Components -> Actions
