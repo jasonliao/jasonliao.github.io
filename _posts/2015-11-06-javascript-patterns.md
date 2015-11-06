@@ -8,10 +8,10 @@ summary: 对《JavaScript Patterns》和《Learning JavaScript Design Patterns�
 
 对《JavaScript Patterns》和《Learning JavaScript Design Patterns》的一些总结，大部分是以链接的形式链接到更详细的笔记
 
-感谢 [汤姆大叔的关于设计模式的文章](http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html) 和工作室小伙伴东帅，我们的讨论总能迸出点什么，这是他关于 [Java　Design Patterns 的 repo](https://github.com/XiaodongDu/design-pattern-examples)
+感谢 [汤姆大叔的关于设计模式的文章](http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html) 和工作室小伙伴东帅，我们的讨论总能迸出点什么，这是他关于 [Java Design Patterns 的 repo](https://github.com/XiaodongDu/design-pattern-examples)
 
 # Creational Design Patterns
-.
+
 - [Singleton Pattern](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/singleton-pattern.md)
 - [Factory Pattern](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/factory-pattern.md)
 - [Modual Pattern](https://github.com/L-movingon/prepare-for-interview/blob/master/Books/JavaScript-Patterns/javascript-patterns-part-3.md#module-pattern)

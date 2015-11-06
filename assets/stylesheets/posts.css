@@ -50,6 +50,7 @@
 }
 
 .mod-postmain .highlight {
+  border-radius: 5px;
   margin-top: 20px;
   font-weight: normal;
 }  
