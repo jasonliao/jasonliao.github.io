@@ -1,7 +1,7 @@
 ---
 layout: post
 category: css
-title: This never realy was about pie charts
+title: This never really was about pie charts
 date: 2015-11-23
 summary: 看完 Lea Verou 在 CSSConf 上的分享后内容的总结和感想
 ---
@@ -137,7 +137,7 @@ border-radius: 50%
 
 这就是 40% 占比的 Pie Chart，两行代码，只要改一处地方就可以改变占比，so cool!
 
-# This never realy was about pie charts
+# This never really was about pie charts
 
 其实不仅仅是 Pie Charts，我们写 CSS 的时候，不仅仅要实现就可以了，还要想出多几种方法，对比其中的好与不好
 

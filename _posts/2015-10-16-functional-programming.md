@@ -124,12 +124,12 @@ httpGet('/post/2', renderPost);
 //	impure
 var minimum = 21;
 
-var checkAge = function (age） {
+var checkAge = function (age) {
     return age >= minimum;
 };
 
 // pure
-var checkAge = function (age） {
+var checkAge = function (age) {
     var minimum = 21;
     return age >= minimum;
 };
