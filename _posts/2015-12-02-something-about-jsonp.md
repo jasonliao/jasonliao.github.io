@@ -96,7 +96,7 @@ $.ajax({
 
 当然这时候你还是去请求那个不健硕的 `remote.js` 的时候，浏览器就会报错了
 
-```error
+```bash
 Uncaught ReferenceError: _ is not defined
 ```
 
