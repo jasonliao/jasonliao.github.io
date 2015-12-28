@@ -1,7 +1,7 @@
 ---
 layout: post
 category: react, redux
-title: Getting Start with Redux
+title: Getting Started with Redux
 date: 2015-12-28
 summary: 在 egghead.io 上跟 Dan Abramov 学 Redux 的笔记
 ---
