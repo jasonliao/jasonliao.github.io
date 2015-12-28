@@ -322,12 +322,12 @@ const combinReducers = (reducers) => {
 ```javascript
 <ul>
   { visibleTodos.map(todo => 
-   <li key={todo.id} onClick={() => {
-     store.dispatch({ type: 'TOGGLE_TODO', id: todo.id });
-   }} style={{
-      textDecoration: todo.completed ? 'line-through': 'none',
-      color: todo.completed ? 'red': 'black'
-   }}>{todo.text}</li>
+    <li key={todo.id} onClick={() => {
+      store.dispatch({ type: 'TOGGLE_TODO', id: todo.id });
+    }} style={
+      { textDecoration: todo.completed ? 'line-through': 'none',
+        color: todo.completed ? 'red': 'black'}
+    }>{todo.text}</li>
   )}
 </ul>
 ```
@@ -387,10 +387,10 @@ const getVisibleTodos = (todos, filter) => {
 
 ```javascript
 const Todo = ({ completed, text, onClick }) => (
-  <li onClick={onClick} style={{
-    textDecoration: completed ? 'line-through': 'none',
-    color: completed ? 'red': 'black'
-  }}>{text}</li>
+  <li onClick={onClick} style={
+    { textDecoration: completed ? 'line-through': 'none',
+    color: completed ? 'red': 'black' }
+  }>{text}</li>
 );
 ```
 
