@@ -8,7 +8,7 @@ summary: 对 flux 的浅显理解，总结怎么从零开始用 React 和 Flux �
 
 这是 Facebook 官方学习 Flux 的 [demo](https://facebook.github.io/flux/docs/todo-list.html)
 
-这是我用 ES6 重写的[版本](https://github.com/L-movingon/simple-todo-with-react-and-flux)，可以看有什么不同喔 
+这是我用 ES6 重写的[版本](https://github.com/L-movingon/simple-todo-with-react-and/tree/master/flux)，可以看有什么不同喔 
 
 想用这个例子来总结一下怎么从零开始用 React 和 Flux 构建一个 App 
 
