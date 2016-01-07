@@ -2,7 +2,7 @@
 layout: post
 category: react, node
 title: Login-Logout App
-date: 2016-01-07
+date: 2016-01-08
 summary: 用 React, Redux, React-Router, Express 构建的小应用
 ---
 
