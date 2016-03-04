@@ -10,8 +10,6 @@ baseurl: /
 
 url: http://l-movingon.github.io/
 
-markdown: redcarpet
-
 permalink: /posts/:year-:month-:day-:title.html
 
 port: 4000
