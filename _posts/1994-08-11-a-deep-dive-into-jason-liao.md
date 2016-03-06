@@ -6,71 +6,70 @@ date: 1994-08-11
 summary: Understand me via this
 ---
 
-[Download my resume]({{ site.url }}assets/jason-liao-front-end-resume.pdf)
+[Download My Resume]({{ site.url }}assets/jason-liao-front-end-resume.pdf)
 
-## 教育经历(Education)
+# 个人信息
 
-2013届广东工业大学计算机学院计算机科学与技术专业，曾在2013～2014学年获得优秀学生二等奖学金。从大一开始接触前端，是一名前端爱好者。同时加入TopView实验室并开始进行网页应用的项目开发，专注于前端，有良好的沟通能力和团队协作能力。
+姓名：廖杰斌
+学校：广东工业大学
+专业：计算机科学与技术
+毕业时间：2017／07
 
-## 项目开发经验(Project and Experience)
+本人性格热情开朗，爱编程，爱折腾。从大一开始接触前端，同时加入学校科研团队进行网页应用的项目开发。担任团队前端负责人，有良好的沟通能力和团队协作精神
 
-### 1.海口市公共安全联动指挥系统
+# 技能
 
-该项目为了避免多人开发时造成样式的差异过大，使用了 Ext4 框架，本人负责了全局函数的编写和快捷方式、任务、事件、权限等各个模块的界面编写和调用，也被派到现场对项目进行调试和模拟演练
+- 具有 2 年的 Web App 开发经验，能很好地与后台人员交互、共同构建高性能且兼容好好的应用
+- 能够编写语义化的 HTML，对 HTML5 新特性有一定的了解，会运用 Jade，ejs　等模板引擎
+- 可以利用 CSS/CSS3 完成常见的响应布局，对 CSS3 新特性、Sass 预处理工具有一定的了解
+- 熟悉并热爱 JavaScript，开发中会简单运用 ES2015，并时刻关注 ES 的发展趋势
+- 熟悉运用 jQuery，ExtJS，Bootstrap 等库，会结合 React，Redux，Express 构建小型应用
+- 会简单使用 Gulp，Webpack 等自动化构建和模块化管理工具
+- 能够使用 PhotoShop 完成基本的设计效果
 
-#### 掌握内容
+# 项目经验
 
-- 熟悉运用 Ext 大部分组件
-- 学会使用 svn 进行多人开发
+## 海南省海口市公共安全联动指挥系统 
 
-### 2.湖南长沙烟草一卡通平台
+时间：2014-10 ~ 
 
-项目同样使用了 Ext4 进行开发，本人负责前端框架的搭建和设备信息管理、一卡通信息图表展示和系统管理等等模块，也曾被派到当地烟草局进行需求的沟通
+项目描述：该系统集成了几大厂商的不同系统：视频监控与会议、网络电话与传真、GPS 车辆导航等。同时根据国家对应急指挥高度系统的规定，拥有一套应急指挥调度的完整流程，并结合 GIS 技术，以地图的方式实现资源的展示与调度。本项目第一版已上线使用
 
-#### 掌握内容
+我的工作：我在该项目中负责全局函数的封装、快捷方式、任务、事件、权限等多个模块的界面编写和逻辑处理，曾到现场对项目进行调试和部署，对整个应用的性能、兼容、和响应式进行处理，确保整个指挥调度流程的完善和顺畅
 
-- Ext 底层样式的修改
-- 熟悉运用 Ext 图表组件
-- svn 的分支开发
+## 湖南长沙烟草一卡通集成平台
 
-### 3.广州外国语学校的摇号程序
+时间：2014-12 ~ 2015-05
 
-基于 Express，独立开发的一个为广州外国语学校随机选择入校学生的程序
+项目描述：该系统主要是通过视频监控来对各个厂房进行工作监控，以及门禁，考勤，消费等信息进行报表的展示和查询
 
-#### 掌握内容
+我的工作：我在该项目中搭建了 ExtJS 的 MVC 框架，可以让其他成员快速系统地开发。参与了设备信息管理、一卡通信息图表展示和系统管理等等模块，对 ExtJS Charts 进行适当地再次封闭，形成组件。并帮助其他前端队员进行页面的开发以及部分页面的调试，曾到长沙烟草局对需求进行了解和硬件接入
 
-- Express 的简单运用
-- Jade 模板引擎
-- fullpage 的简单运用
+## 广州外国语学校招生摇号录取系统
 
-## 技能(Skills)
+时间：2015-06
 
-### HTML & CSS
+项目描述：该系统是通过随机的对 500 多名学生进行摇号，从中选出被录取的学生
 
-- 能够编写语义化的 HTML，可以利用 CSS 完成一般的布局
-- 熟悉 HTML5 & CSS3 新特性
+我的工作：我在该项目中运用 Express 和 fullpage 独立完成整个系统的所有工作
 
-### ECMAScript
+# 个人作品
 
-- 基本了解 ECMAScript，清楚`prototype`、`this`、`closures`、`scope`等的运行机制
-- 对 ECMAScript2015 的新特性有一定的了解，并时刻关注 ECMAScript 的未来进展
+## simple-todo-with-react-and
 
-### Libraries and Frameworks
+该 [仓库托管在 GitHub](https://github.com/L-movingon/simple-todo-with-react-and) 上，是运用 React 分别配合 Flux、Reflux 和 Redux 来做成一个简单的 TODO App，从中学习这三者的区别和各自的优缺点
 
-- 熟悉 jQuery、Ext、Bootstrap 的使用
-- 对 React、jQueryUI 有一定有了解
+## isomorphic-react-workflow-boilerplate
 
-### Other
+[这个模板](https://github.com/L-movingon/isomorphic-react-workflow-boilerplate) 可以让你更加方便地使用 React，Redux 开发一个简单的应用，你可以使用最新的 ES6 语法，也有 React-Hot-Loader 解决你不断手动刷新浏览器麻烦，更多详情和用法可以查看 [README](https://github.com/L-movingon/isomorphic-react-workflow-boilerplate#isomorphic-react-workflow-boilerplate)
 
-- 基本掌握 npm、bower 等模块化管理
-- 在个人项目中使用过 Sass、Jade等预处理工具和模版引擎
-- 会简单使用 Gulp 自动化构建工具
-- 熟悉使用 Photoshop 完成基本设计效果
+## l-movingon.github.io
 
-## 联系我(Contact me)
+这个是结合 Sass，Jade 和 Jekyll 搭建的个人技术博客
+
+# 联系方式
 
 - Tel: 18826233070
-- [Email: lmovingon2014@gmail.com](mailto:lmovingon2014@gmail.com)
-- [GitHub: Jason Liao](https://github.com/L-movingon)
-- [Blog: Jason's](https://l-movingon.github.io)
-- [Twitter: @JasonLiao94](https://twitter.com/JasonLiao94)
+- Email: lmovingon2014@gmail.com
+- GitHub: [https://github.com/L-movingon](https://github.com/L-movingon)
+- Blog: [https://l-movingon.github.io](https://l-movingon.github.io)
