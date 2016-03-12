@@ -176,7 +176,7 @@ render();
 - 元素增加
 
     ```javascript
-    // We can't use `Array.push()` method
+    // We can't use Array.push() method
     // We can use ...spread
     let list = [];
     
@@ -186,7 +186,7 @@ render();
 - 元素去除
 
     ```javascript
-    // We can't use `Array.splice()` method
+    // We can't use Array.splice() method
     
     let list = [0, 10, 20];
     
@@ -196,7 +196,7 @@ render();
 - 元素改变
 
     ```javascript
-    // We can't use `list[index]++`
+    // We can't use list[index]++
     
     let list = [0, 10, 20];
     

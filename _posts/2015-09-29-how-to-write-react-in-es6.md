@@ -70,7 +70,7 @@ class ExampleComponent extends React.Component {
 还有一种就是利用 `bind(this)` 
 
 ```javascript
-// use `bind(this)` when called
+// use bind(this) when called
 class ExampleComponent extends React.Component {
   constructor (props) {
     super(props);
@@ -83,7 +83,7 @@ class ExampleComponent extends React.Component {
   }
 }
 
-// use `bind(this)` in constructor
+// use bind(this) in constructor
 class ExampleComponent extends React.Component {
   constructor (props) {
     super(props);

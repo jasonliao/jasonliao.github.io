@@ -181,7 +181,7 @@ var checkAge = function (age) {
 
 ```javascript
 // 首先定义一个处理多参数的函数 
-// 例如一个多参数求和 `add`
+// 例如一个多参数求和 add
 
 function add () {
     var sum = 0,
@@ -191,13 +191,13 @@ function add () {
     }
 }
 
-// 这时对 `add` 函数进行 柯里化
+// 这时对 add 函数进行 柯里化
 var currilyAdd = curry(add);
 
 // 可以先处理一部分参数，来得到一个函数
 var add10 = currilyAdd(10);
 
-// 得到了一个 `add10` 函数，更直观，可读
+// 得到了一个 add10 函数，更直观，可读
 console.log(add10(11)); // 21
 ```
 

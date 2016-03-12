@@ -26,18 +26,18 @@ summary: 对《JavaScript Patterns》和《Learning JavaScript Design Patterns�
     我们常常使用到装饰者模式是当我们发现原来这个对象的方法或方法实现不满足我们要求的时候，我们可能去对这个对象进行装饰
     
     ```javascript
-    // 例如我们有一个类，类中有一个 `decorate` 的方法
+    // 例如我们有一个类，类中有一个 decorate 的方法
     var tree = {
         decorate: function () {
             console.log('Make the tree pretty');
         }
     };
     
-    // 这时我们要定义我们的装饰类，重写原来类的 `decorate` 方法
+    // 这时我们要定义我们的装饰类，重写原来类的 decorate 方法
     tree.RedBalls = function () {
         this.decorate = function () {
-            // `this` 指的是 `RedBalls` 这个构造类
-            // 当然我们执行 `getDecorator` 方法的时候
+            // this 指的是 RedBalls 这个构造类
+            // 当然我们执行 getDecorator 方法的时候
             // 这个类的原型就指向调用者，所以我们可以拿到父类，使用父类变量或者方法
             var uber = this.RedBalls.prototype;
             uber.decorate();
@@ -61,11 +61,11 @@ summary: 对《JavaScript Patterns》和《Learning JavaScript Design Patterns�
         };
     };
     
-    // 想要 `tree` 可以用这些装饰类，我们还需要一个方法
+    // 想要 tree 可以用这些装饰类，我们还需要一个方法
     tree.getDecorator = function (deco) {
-        // 把装饰类的原型指向 `tree` 类
+        // 把装饰类的原型指向 tree 类
         tree[deco].prototype = this;
-        // 返回装饰后的 `tree` 类
+        // 返回装饰后的 tree 类
         return new tree[deco];
     };
     
