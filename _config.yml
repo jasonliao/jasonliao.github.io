@@ -17,3 +17,5 @@ port: 4000
 paginate : 6
 
 source: .
+
+markdown: redcarpet
