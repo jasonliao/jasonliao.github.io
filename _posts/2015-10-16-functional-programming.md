@@ -22,12 +22,11 @@ Table of Content
 
 ```javascript
 var hi = function (name) {
-    return 'Hi
-    ' + name;
+  return 'Hi' + name;
 };
 
 var greeting = function (name) {
-    return hi(name);
+  return hi(name);
 };
 ```
 
@@ -41,9 +40,9 @@ var greeting = hi;
 
 ```javascript
 var getServerStuff = function (callback) {
-    return ajaxCall(function (json) {
-        return callback(json);
-    });
+  return ajaxCall(function (json) {
+    return callback(json);
+  });
 };
 
 // 以上代码等价于
@@ -57,12 +56,12 @@ var getServerStuff = ajaxCall;
 ```javascript
 // 先看看 ajaxCall 里的那个匿名函数
 function (json) {
-    return callback(json);
+  return callback(json);
 }
 
 // 我们为这个匿名函数加个名字为 noName，即
 var noName = function (json) {
-    return callback(json);
+  return callback(json);
 }
 
 // 当我们调用这个 noName 函数的时候，返回的是 callback(json)，即
@@ -71,7 +70,7 @@ noName(json); // callback(json);
 // 所以这个匿名函数 noNane 其实就等于 callback
 // 那么
 return ajaxCall(function (json) {
-    return callback(json);
+  return callback(json);
 });
 
 // 就相等于
@@ -79,7 +78,7 @@ return ajaxCall(callback);
 
 // 同样的道理
 var getServerStuff = function (callback) {
-    return ajaxCall(callback);
+  return ajaxCall(callback);
 };
 
 // 调用 getServerStuff 函数的时候
@@ -94,7 +93,7 @@ var getServerStuff = ajaxCall;
 
 ```javascript
 httpGet('/post/2', function (json) {
-    return renderPost(json);
+  return renderPost(json);
 }
 ```
 
@@ -102,7 +101,7 @@ httpGet('/post/2', function (json) {
 
 ```javascript
 httpGet('/post/2', function (json, err) {
-    return renderPost(json, err);
+  return renderPost(json, err);
 }
 ```
 
@@ -125,13 +124,13 @@ httpGet('/post/2', renderPost);
 var minimum = 21;
 
 var checkAge = function (age) {
-    return age >= minimum;
+  return age >= minimum;
 };
 
 // pure
 var checkAge = function (age) {
-    var minimum = 21;
-    return age >= minimum;
+  var minimum = 21;
+  return age >= minimum;
 };
 ```
 
@@ -141,37 +140,37 @@ var checkAge = function (age) {
 
 - Cacheable
 
-    一个纯函数总能根据输入来做缓存，这样不仅可以使同样的输入总是返回同样的东西，然后还可以提高运行的速率
+  一个纯函数总能根据输入来做缓存，这样不仅可以使同样的输入总是返回同样的东西，然后还可以提高运行的速率
+
+  我们可以定义一个 `memoize` 函数，可以给它传入任意一个函数，不管这个函数有多大的破坏性
+
+  ```javascript
+  var memoize = function (fn) {
+    var cache = {};
     
-    我们可以定义一个 `memoize` 函数，可以给它传入任意一个函数，不管这个函数有多大的破坏性
-    
-    ```javascript
-    var memoize = function (fn) {
-        var cache = {};
-        
-        return function () {
-            var arg_str = JSON.stringify(arguments);
-            cache[arg_str] = cache[arg_str] || fn.apple(fn, arguments);
-            return cache[arg_str];
-        };
+    return function () {
+      var arg_str = JSON.stringify(arguments);
+      cache[arg_str] = cache[arg_str] || fn.apple(fn, arguments);
+      return cache[arg_str];
     };
-    
-    // 定义一个 squareArea 函数
-    var squareArea = memoize(function (x) { return x * x; });
-    
-    squareArea(5);  // 25
-    squareArea(5);  // 25 : form cache
-    ```
+  };
+
+  // 定义一个 squareArea 函数
+  var squareArea = memoize(function (x) { return x * x; });
+
+  squareArea(5);  // 25
+  squareArea(5);  // 25 : form cache
+  ```
     
 - Testable
 
-    纯函数非常容易测试，你输入的是什么，输出就是什么，不会受环境的影响，所以不需要在测试前配置和模拟一堆的环境
+  纯函数非常容易测试，你输入的是什么，输出就是什么，不会受环境的影响，所以不需要在测试前配置和模拟一堆的环境
     
 - Parallel Code
 
-    因为纯函数不会不会受外围环境还有变量的影响，所有不需要访问共享的内存，而且纯函数也不会因副作用而进入竞争态(race condition)
-    
-    代码并行在服务器端的 JavaScript 和使用了 [Web worker](#web-worker) 的浏览器是非常容易实现的，但对于现阶段来说，出于 Web worker 的兼容性还有非纯函数的复杂性来考虑，还是避免使用代码并行为好
+  因为纯函数不会不会受外围环境还有变量的影响，所有不需要访问共享的内存，而且纯函数也不会因副作用而进入竞争态(race condition)
+
+  代码并行在服务器端的 JavaScript 和使用了 [Web worker](#web-worker) 的浏览器是非常容易实现的，但对于现阶段来说，出于 Web worker 的兼容性还有非纯函数的复杂性来考虑，还是避免使用代码并行为好
     
 # Curry
 
@@ -184,11 +183,11 @@ var checkAge = function (age) {
 // 例如一个多参数求和 add
 
 function add () {
-    var sum = 0,
-        i = 0;
-    for (; i < arguments.length; i++) {
-        sum += arguments[i];
-    }
+  var sum = 0,
+      i = 0;
+  for (; i < arguments.length; i++) {
+      sum += arguments[i];
+  }
 }
 
 // 这时对 add 函数进行 柯里化
@@ -205,16 +204,16 @@ console.log(add10(11)); // 21
 
 ```javascript
 function curry (fn) {
-    // 返回 柯里化 后得到的函数
+  // 返回 柯里化 后得到的函数
+  return function () {
+    // 会把第一次调用 柯里化后函数 的参数存起来
+    var args = [].slice.apply(arguments);
     return function () {
-        // 会把第一次调用 柯里化后函数 的参数存起来
-        var args = [].slice.apply(arguments);
-        return function () {
-            // 第二次调用的时候，把之前保存起来的参数
-            // 一同调用原来的功能函数
-            return fn.apply(fn, args.concat([].slice.apply(arguments)));
-        };
+        // 第二次调用的时候，把之前保存起来的参数
+        // 一同调用原来的功能函数
+        return fn.apply(fn, args.concat([].slice.apply(arguments)));
     };
+  };
 }
 ```
 

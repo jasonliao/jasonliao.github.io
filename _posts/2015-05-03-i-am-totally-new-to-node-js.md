@@ -8,7 +8,7 @@ summary: 开始接触Node.js!!
 
 看完了《node.js入门》这本书，然后远成介绍看《node.js in action》，现在看到了第六章。
 
-书在第二章的时候介绍了怎么写一个 chatroom ，里面也有完整的代码，这里就不再说了，你也可以来[这里](https://github.com/L-movingon/Everything-I-Learn/tree/master/nodejs/node-js-in-action/chatrooms)跑一下，看一下
+书在第二章的时候介绍了怎么写一个 chatroom ，里面也有完整的代码，这里就不再说了，你也可以来 [这里](https://github.com/L-movingon/Everything-I-Learn/tree/master/nodejs/node-js-in-action/chatrooms) 跑一下，看一下
 
 下面介绍一下我是怎么学习 node.js 的
 
@@ -21,13 +21,9 @@ summary: 开始接触Node.js!!
 我们来看看 [node.js 的 API 文档](https://nodejs.org/api/)
 
 - 我们可以知道我们经常使用的`http.createServer(function(req, res) {}).listen(8000);`其实是创建一个服务器，当别人请求这个端口的时候，就会触发`request`事件
-
 - 我们也可以知道`fs`就是我们的`File System`，他可以对我们的文件进行一系列的操作
-
 - 我们也可以知道`events`可以用来监听和执行我们的事件
-
 - 我们也可以知道`net`也像`http`那样有一个`createServer`的方法，但是不同的是，`net`是监听别人的`connection`事件
-
 - ...
 
 所以说 **API在手，问题都赶走**
@@ -45,9 +41,10 @@ summary: 开始接触Node.js!!
 
 所以我们建好了一个`a-simple-dos-chatroom.js`文件，在里面加上下面两行代码
 
-`var net = require('net');`
-
-`var events = require('events');`
+```javascript
+var net = require('net');
+var events = require('events');
+```
 
 先用`net`创建一个服务器，然后监听一个端口号，这里我用3000
 
@@ -63,11 +60,15 @@ net.createServer(function(client) {
 
 通过API，我们可以知道要用`events`来监听和执行事件，要创建`events.EventEmitter`这个类的实例，所以我们来创建这个实例`channel`
 
-`var channel = new events.EventEmitter`
+```javascript
+var channel = new events.EventEmitter
+```
 
 然后我们为这个`channel`实例定义一个 `clients` 的对象，是用来装载登录后的用户
 
-`channel.clients = {};`
+```javascript
+channel.clients = {};
+```
 
 `net.createServer`会监听用户的`connection`事件，当他们连接后，我们就会执行`join`这个事件，所以在此之前，我们可以先定义，或者叫先监听这个`join`这个方法
 
@@ -80,7 +81,9 @@ channel.on('join', function(id, client){
 
 然后我们再在`net.createServer`里执行这个`join`方法
 
-`channel.emit('join', id, client);`
+```javascript
+channel.emit('join', id, client);
+```
 
 现在已经就差最后一步了，就是当我们在自己dos里输入东西的时候，其他的dos也会输出相同的东西，那有什么办法可以监听我们每个client有没有输入东西呢， **查API**
 

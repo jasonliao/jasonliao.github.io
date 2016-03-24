@@ -29,43 +29,43 @@ summary: Understand me via this
 
 # 项目经验
 
-## 海南省海口市公共安全联动指挥系统 
+ 1. **海南省海口市公共安全联动指挥系统**
 
-时间：2014-10 ~ 
+    时间：2014-10 ~ 
 
-项目描述：该系统集成了几大厂商的不同系统：视频监控与会议、网络电话与传真、GPS 车辆导航等。同时根据国家对应急指挥高度系统的规定，拥有一套应急指挥调度的完整流程，并结合 GIS 技术，以地图的方式实现资源的展示与调度。本项目第一版已上线使用
+    项目描述：该系统集成了几大厂商的不同系统：视频监控与会议、网络电话与传真、GPS 车辆导航等。同时根据国家对应急指挥高度系统的规定，拥有一套应急指挥调度的完整流程，并结合 GIS 技术，以地图的方式实现资源的展示与调度。本项目第一版已上线使用
 
-我的工作：我在该项目中负责全局函数的封装、快捷方式、任务、事件、权限等多个模块的界面编写和逻辑处理，曾到现场对项目进行调试和部署，对整个应用的性能、兼容、和响应式进行处理，确保整个指挥调度流程的完善和顺畅
+    我的工作：我在该项目中负责全局函数的封装、快捷方式、任务、事件、权限等多个模块的界面编写和逻辑处理，曾到现场对项目进行调试和部署，对整个应用的性能、兼容、和响应式进行处理，确保整个指挥调度流程的完善和顺畅
 
-## 湖南长沙烟草一卡通集成平台
+ 2. **湖南长沙烟草一卡通集成平台**
 
-时间：2014-12 ~ 2015-05
+    时间：2014-12 ~ 2015-05
 
-项目描述：该系统主要是通过视频监控来对各个厂房进行工作监控，以及门禁，考勤，消费等信息进行报表的展示和查询
+    项目描述：该系统主要是通过视频监控来对各个厂房进行工作监控，以及门禁，考勤，消费等信息进行报表的展示和查询
 
-我的工作：我在该项目中搭建了 ExtJS 的 MVC 框架，可以让其他成员快速系统地开发。参与了设备信息管理、一卡通信息图表展示和系统管理等等模块，对 ExtJS Charts 进行适当地再次封闭，形成组件。并帮助其他前端队员进行页面的开发以及部分页面的调试，曾到长沙烟草局对需求进行了解和硬件接入
+    我的工作：我在该项目中搭建了 ExtJS 的 MVC 框架，可以让其他成员快速系统地开发。参与了设备信息管理、一卡通信息图表展示和系统管理等等模块，对 ExtJS Charts 进行适当地再次封闭，形成组件。并帮助其他前端队员进行页面的开发以及部分页面的调试，曾到长沙烟草局对需求进行了解和硬件接入
 
-## 广州外国语学校招生摇号录取系统
+ 3. **广州外国语学校招生摇号录取系统**
 
-时间：2015-06
+    时间：2015-06
 
-项目描述：该系统是通过随机的对 500 多名学生进行摇号，从中选出被录取的学生
+    项目描述：该系统是通过随机的对 500 多名学生进行摇号，从中选出被录取的学生
 
-我的工作：我在该项目中运用 Express 和 fullpage 独立完成整个系统的所有工作
+    我的工作：我在该项目中运用 Express 和 fullpage 独立完成整个系统的所有工作
 
 # 个人作品
 
-## simple-todo-with-react-and
+ 1. **simple-todo-with-react-and**
 
-该 [仓库托管在 GitHub](https://github.com/L-movingon/simple-todo-with-react-and) 上，是运用 React 分别配合 Flux、Reflux 和 Redux 来做成一个简单的 TODO App，从中学习这三者的区别和各自的优缺点
+    该 [仓库托管在 GitHub](https://github.com/L-movingon/simple-todo-with-react-and) 上，是运用 React 分别配合 Flux、Reflux 和 Redux 来做成一个简单的 TODO App，从中学习这三者的区别和各自的优缺点
 
-## isomorphic-react-workflow-boilerplate
+ 2. **isomorphic-react-workflow-boilerplate**
 
-[这个模板](https://github.com/L-movingon/isomorphic-react-workflow-boilerplate) 可以让你更加方便地使用 React，Redux 开发一个简单的应用，你可以使用最新的 ES6 语法，也有 React-Hot-Loader 解决你不断手动刷新浏览器麻烦，更多详情和用法可以查看 [README](https://github.com/L-movingon/isomorphic-react-workflow-boilerplate#isomorphic-react-workflow-boilerplate)
+    [这个模板](https://github.com/L-movingon/isomorphic-react-workflow-boilerplate) 可以让你更加方便地使用 React，Redux 开发一个简单的应用，你可以使用最新的 ES6 语法，也有 React-Hot-Loader 解决你不断手动刷新浏览器麻烦，更多详情和用法可以查看 [README](https://github.com/L-movingon/isomorphic-react-workflow-boilerplate#isomorphic-react-workflow-boilerplate)
 
-## l-movingon.github.io
+ 3. **l-movingon.github.io**
 
-这个是结合 Sass，Jade 和 Jekyll 搭建的个人技术博客
+    这个是结合 Sass，Jade 和 Jekyll 搭建的个人技术博客
 
 # 联系方式
 

@@ -130,7 +130,7 @@ class Animal {
   }
   
   get appearance () {
-    console.log('I'm here');
+    console.log("I'm here");
   }
 
   appear () {

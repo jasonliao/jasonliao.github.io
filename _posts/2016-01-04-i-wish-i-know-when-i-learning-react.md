@@ -28,41 +28,41 @@ class Hello extends React.Component {}
 
 - 我们在创建类之后，可以在构造器里对我们所有的函数做一个绑定
 
-    ```javascript
-    class Counter extends React.Component {
-      constructor () {
-        super();
-        this.tick = this.tick.bind(this);
-      }
-      tick () {
-        // ...
-      }
+  ```javascript
+  class Counter extends React.Component {
+    constructor () {
+      super();
+      this.tick = this.tick.bind(this);
+    }
+    tick () {
       // ...
     }
-    ```
+    // ...
+  }
+  ```
 
 - 也可以在我们调用函数的时候，进行绑定
 
-    ```javascript
-    class Counter extends React.Component {
-      tick () {
-        // ...
-      }
-      render () {
-        return <button onClick={this.tick.bind(this)}>Click</button>
-      }
+  ```javascript
+  class Counter extends React.Component {
+    tick () {
+      // ...
     }
-    ```
+    render () {
+      return <button onClick={this.tick.bind(this)}>Click</button>
+    }
+  }
+  ```
     
 - 我们也可以使用 Arrow Functions 去实现
 
-    ```javascript
-    class Counter extends React.Component {
-      tick = () => {
-        // ...
-      }
+  ```javascript
+  class Counter extends React.Component {
+    tick = () => {
+      // ...
     }
-    ```
+  }
+  ```
 
 其次是 Mixins，Mixins 只是让你把一些额外的功能集成到你的组件里，相反的，我们可以把功能写在另一个组件里，然后再把之前的组件传进来，组合之后 export 出去，我们把这种组件称之为 "Higher-Order Component"，具体的 demo 在下面的链接里有
 
@@ -79,14 +79,14 @@ class Hello extends React.Component {}
 也就是 Container Components 和 Presentational Components。自从 v0.13 出来之后提出了 "Higher-Order Component"，慢慢的发现，我们的组件会分为两类
 
 - Dumb Components
-    - 不会依赖应用的 `action` 或者 `store`
-    - 接收数据和回调通过 `props`
-    - 几乎没有自己的 `state`
-    - 可能会用到其他 Dumb Components
+  - 不会依赖应用的 `action` 或者 `store`
+  - 接收数据和回调通过 `props`
+  - 几乎没有自己的 `state`
+  - 可能会用到其他 Dumb Components
 - Smart Components
-    - 把一个或者多个 Smart or Dumb Components 包含起来
-    - 用引用 `action` 或者 `store`，传到 Dumb Components 下面去
-    - 几乎没有 DOM 节点，都是通过其他 Smart or Dumb Components 组合起来
+  - 把一个或者多个 Smart or Dumb Components 包含起来
+  - 用引用 `action` 或者 `store`，传到 Dumb Components 下面去
+  - 几乎没有 DOM 节点，都是通过其他 Smart or Dumb Components 组合起来
 
 所以后来在 React v0.14 更新的时候，不仅仅把 React 分成了 React 和 ReactDOM，而且还提出了 Stateless Functional Components，也就是类似上面的 Dumb Components，这种组件因为没有多余的部分，只负责渲染，所以我们直接可以使用新版本的语法
 

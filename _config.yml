@@ -1,5 +1,7 @@
 title: "Jason's"
 
+name: "Jason's"
+
 description: 'Sharing makes better.'
 
 author: 'Jason Liao'
@@ -14,8 +16,12 @@ permalink: /posts/:year-:month-:day-:title.html
 
 port: 4000
 
-paginate : 6
+gems: ['jekyll-paginate']
+
+paginate: 6
+
+paginate_path: 'page:num'
 
 source: .
 
-markdown: redcarpet
+exclude: [README.md, node_modules, gulpfile.js, package.json, _site]

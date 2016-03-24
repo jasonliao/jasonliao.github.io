@@ -173,7 +173,7 @@ render();
 
 在我们的 reducer 中，我们的函数都是纯函数，这意味着我们不可以修改我们的传入的 State，那如果当我们的 State 是一个数组的时候，我们要怎么去处理这些数组元素中的变动呢？
 
-- 元素增加
+ 1. 元素增加
 
     ```javascript
     // We can't use Array.push() method
@@ -183,7 +183,7 @@ render();
     return [...list, 0];
     ```
     
-- 元素去除
+ 2. 元素去除
 
     ```javascript
     // We can't use Array.splice() method
@@ -193,7 +193,7 @@ render();
     return [...list.slice(0, index), ...list.slice(index + 1)];
     ```
     
-- 元素改变
+ 3. 元素改变
 
     ```javascript
     // We can't use list[index]++
@@ -205,7 +205,7 @@ render();
       list[index] + 1,
       ...list.slice(index + 1)
     ];
-    
+
     return list.map((item, index) => {
       if (index != 1) {
           return item;

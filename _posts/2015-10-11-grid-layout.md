@@ -29,10 +29,10 @@ ok, here we go...
 
 ```html
 <div class="grid">
-    <div class="a">A</div>
-    <div class="b">B</div>
-    <div class="c">C</div>
-    <div class="d">D</div>
+  <div class="a">A</div>
+  <div class="b">B</div>
+  <div class="c">C</div>
+  <div class="d">D</div>
 </div>
 ```
 
@@ -44,9 +44,9 @@ ok, here we go...
 
 ```css 
 .grid {
-    display: grid;
-    grid-template-column: 100px 100px 100px;
-    grid-template-rows: 100px 200px;
+  display: grid;
+  grid-template-column: 100px 100px 100px;
+  grid-template-rows: 100px 200px;
 }
 ```
 
@@ -56,12 +56,12 @@ ok, here we go...
 
 ```css
 .grid {
-    display: grid;
-    grid-template-columns: 100px auto;
-    grid-template-rows: 100px 200px;
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: 100px 200px;
 }
 .b {
-    width: 300px;
+  width: 300px;
 }
 ```
 
@@ -75,8 +75,8 @@ ok, here we go...
 
 ```css
 .grid {
-    display: grid;
-    grid-temlpate-columns: 200px 1fr;
+  display: grid;
+  grid-temlpate-columns: 200px 1fr;
 }
 ```
 
@@ -86,8 +86,8 @@ ok, here we go...
 
 ```css
 .grid {
-    display: grid;
-    grid: 100px 100px / 100px 200px;
+  display: grid;
+  grid: 100px 100px / 100px 200px;
 }
 ```
 
@@ -99,15 +99,15 @@ ok, here we go...
 
 ```html
 <div class="grid">
-    ...
-    <!-- <div class="d">D</div> -->
+  ...
+  <!-- <div class="d">D</div> -->
 </div>
 ```
 
 ```css
 .a {
-    grid-row: 2;
-    grid-column: 1;
+  grid-row: 2;
+  grid-column: 1;
 }
 ```
 
@@ -123,24 +123,24 @@ ok, here we go...
 
 ```css
 .grid {
-    grid-template-areas: "head head"
-                         "nav main"
-                         "foot foot";
+  grid-template-areas: "head head"
+                       "nav main"
+                       "foot foot";
 }
 ```
 
 ```css
 .a {
-    grid-area: head;
+  grid-area: head;
 }
 .b {
-    grid-area: nav;
+  grid-area: nav;
 }
 .c {
-    grid-area: main;
+  grid-area: main;
 }
 .d {
-    grid-area: foot;
+  grid-area: foot;
 }
 ```
 
@@ -152,13 +152,13 @@ ok, here we go...
 
 ```css
 .grid {
-    grid: 
-    grid-template-areas:
+  grid: 
+  grid-template-areas:
 }
 
 @media (max-width: xxxpx) {
-    grid:
-    grid-template-areas:
+  grid:
+  grid-template-areas:
 }
 ```
 

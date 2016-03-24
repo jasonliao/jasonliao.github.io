@@ -132,7 +132,7 @@ destructure(o, (x) => x);
 let first = 'Jason';
 let last = 'Liao';
 
-let fullName = `I'm ${first} ${last}';
+let fullName = `I'm ${first} ${last}'`;
 console.log(fullName);
 // I'm Jason Liao
 ```

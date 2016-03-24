@@ -104,7 +104,7 @@ export default TodoActions;
 
 # Dispatcher
 
-Dispatcher 的具体实现可以看[这里](https://github.com/facebook/flux/blob/master/src/Dispatcher.js)
+Dispatcher 的具体实现可以看 [这里](https://github.com/facebook/flux/blob/master/src/Dispatcher.js)
 
 当我们用 Facebook 给我们提供的 Dispatcher，那么一切都会变得简单了许多
 
@@ -160,6 +160,7 @@ function create (text) {
   };
 }
 ```
+
 ## Store 是一个响应 Dispatcher 呼喊的地方
 
 > “有人做了一个操作呀，这个操作就是 xxx (actionType 的值)，还带了个参数，你们哪个来处理一下呀”

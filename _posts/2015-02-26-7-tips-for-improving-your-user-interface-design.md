@@ -8,7 +8,7 @@ summary: 7个提升你用户界面设计的小方法
 
 [http://www.queness.com/post/13679/7-tips-for-improving-your-user-interface-design](http://www.queness.com/post/13679/7-tips-for-improving-your-user-interface-design)
 
-#前言(Introduction)
+## 前言(Introduction)
 
 当你试着想去把网站要提供的功能全部涵盖的时候，有时候会很容易忽略用户设计
 
@@ -16,23 +16,23 @@ summary: 7个提升你用户界面设计的小方法
 
 所以一定要确保你是走在创建一个成功的用户界面的道路上，下面是一些小建议
 
-#1. 个性化你的设计(Personalize Your Design)
+## 1. 个性化你的设计(Personalize Your Design)
 
 第一个要考虑的就是用户喜欢的和想看到的用户界面，通过交互去亲近你的读者(一些网站通过投票去发现他们读者更多的爱好)，然后根据他们的喜好去改动你的设计
 
-#2. 系统化你的设计(Systematize Your Design)
+## 2. 系统化你的设计(Systematize Your Design)
 
 当你考虑了你网站建立起来所需要的元素之后，就要想想怎么把他们构成一个整体，使他们可以在不同的环境中起作用
 
 例如 Vanmoof 这个网站建立了一个系统，亮黄色标记的地方就是这个页面需要注意和重要的信息，黑色强调你已经选择了的东西，亮灰色则是说明你可以获取更多的信息
 
-#3. 多想想字体的排版(Thank About Your Typography)
+## 3. 多想想字体的排版(Thank About Your Typography)
 
 当设计怎么去引导用户体验的时候，字体的排版是一个十分需要考虑的部分，但却常常被忽视
 
 创建一个有层次的字体，包括他们的粗细和风格，并有计划的在不同的环境中组合着使用他们
 
-#4. 在导航和内容中使用图标(Use Icons in Navigation and in Content)
+## 4. 在导航和内容中使用图标(Use Icons in Navigation and in Content)
 
 图标总可以整合到任何一种风格的网站，他们可以很容易地使你整个网页增加深度和趣味性，同时也可以使个人网页活跃起来
 
@@ -40,13 +40,13 @@ summary: 7个提升你用户界面设计的小方法
 
 即使是一点点的小图标，也可以给网页吸引更多的目光，引诱读者继续浏览下去
 
-#5. 在图片和内容之间找到平衡(Find a Balance Between Images and Content)
+## 5. 在图片和内容之间找到平衡(Find a Balance Between Images and Content)
 
 很多网站因为过多的文本和远远不够的醒目的图片使之不能保持网页的迷人
 
 虽然很难得到或者创造一些很惊人的东西，但是高质量的图片和插图，可以帮我们越过这些障碍(得到这些)
 
-#6. 一致的导航仍然可以很有趣(Consistent Navigation Can Still Be Interesting)
+## 6. 一致的导航仍然可以很有趣(Consistent Navigation Can Still Be Interesting)
 
 正如上面所说的，保持规则的一致性非常的重要，这样一来你用户才不会自己在那里和因为寻找东西而烦恼
 
@@ -55,7 +55,7 @@ summary: 7个提升你用户界面设计的小方法
 话虽然这样说，在这么限制的条件下，依然可以做得很好
 
 
-#7. 尽可能的简化你的元素(Simplify Elements as Much as Possible)
+## 7. 尽可能的简化你的元素(Simplify Elements as Much as Possible)
 
 尽管你在运营一个相当简单的网页，仔细地组织去降低混乱，和保持尽可能的去留白
 

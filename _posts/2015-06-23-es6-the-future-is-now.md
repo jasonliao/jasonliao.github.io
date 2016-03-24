@@ -75,7 +75,7 @@ console.log(greeting());
 var builder = {
   name: 'Emmet',
   getGreeting = function () {
-    return () => 'Hi, I'm ' + this.name;
+    return () => "Hi, I'm " + this.name;
   }
 }
 

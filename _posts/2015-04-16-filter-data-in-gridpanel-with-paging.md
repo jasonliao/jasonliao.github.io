@@ -11,9 +11,7 @@ summary: Ext.js中分页的Gripanel按条件过滤遇到的问题与解决方法
 但在实践的时候会发现几个问题：
 
 1. 怎么把用户输入的信息传给后台
-
 2. 如果传的值为中文，怎么修改默认的请求方式
-
 3. 重新加载的时候，页脚的信息如何同时更新
 
 Ext4 采用的是 MVC 的开发模式( Ext5 采用的是 MVVM )，所以我们是要创建一个 dataStore 来装载我们的数据，下面我们一般创建 store 的代码
@@ -41,7 +39,7 @@ var store = Ext.create('Ext.data.Store', {
 
 ```javascript
 store.load({
-  params : {
+  params: {
     'params1': xxx,
     'params2': xxx
   }
@@ -53,7 +51,7 @@ store.load({
 但如果我们的参数是中文，或者我们的请求需要是 POST，则要在我们的 store 里加入`actionMethods`这个对象
 
 ```javascript
-actionMethods : {
+actionMethods: {
   create: 'POST',
   read: 'POST',
   update: 'POST',

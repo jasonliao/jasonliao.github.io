@@ -34,9 +34,7 @@ if(s == s1) {
 这时候可以看到 打印出来的是 s != s1 这就是不可预料的情况！
 
 - `var s = new String('hello world');`
-
 - `var s1 = String('hello world');`
-
 - `var s2 = 'hello world';`
 
 这三者到底有什么区别呢？

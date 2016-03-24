@@ -17,9 +17,7 @@ Event Loop 是解决 JavaScript 单线程问题的一种运行机制
 但是就会出现了如下的问题
 
 1. 程序继续往下跑是一个进程，那 Event Loop 跑的难道不是另一个线程吗？
-
 2. 如果 Event Loop 接受到很多个请求，那是按什么顺序去执行？
-
 3. Event Loop 完成后把结果返回给程序，程序是立刻执行吗？正在执行的代码怎么办？
 
 后来我在 stackoverflow 上看到 [Understanding the Event Loop](http://stackoverflow.com/questions/21607692/understanding-the-event-loop) 和 tuts+ 里的 [Event-Based Programming: What Async Has Over Sync](http://code.tutsplus.com/tutorials/event-based-programming-what-async-has-over-sync--net-30027)
@@ -79,11 +77,8 @@ setTimeout(function() {
 ![about-event-loop-2]({{ site.url }}assets/images/about-event-loop/about-event-loop-2.jpg)
 
 - Heap: 用来存放变量
-
 - Stack: 用来执行 JavaScript (只会执行位于Stack里顶部的代码)
-
 - Web API: 执行 DOM，XMLHttpRequest，setTimeout等，执行完后把回调函数放在 callback queue 里
-
 - Event loop: 只有当 Stack 为空并且 callback queue 里有回调函数的时候，才会把 callback queue 里的函数代码放到 Stack 里执行
 
 [What the heck is the event loop anyway?](http://www.youtube.com/watch?v=8aGhZQkoFbQ) 这个视频解释得很好很明白 

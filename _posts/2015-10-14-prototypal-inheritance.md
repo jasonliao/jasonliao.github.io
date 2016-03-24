@@ -44,20 +44,21 @@ console.log(Object.getPrototypeOf(cat) === animal); // true
 
 ```javascript
 Object.create = function (superClass) {
-    function F () {};
-    F.prototype = superClass();
-    return new F();
+  function F () {};
+  F.prototype = superClass();
+  return new F();
 }
 ```
+
 # Just try!
 
 用 `Object.create` 方法就可以克隆一个已经存在的对象
 
 ```javascript
 var rectangle = {
-    area: function () {
-        return this.width * this.height;
-    }
+  area: function () {
+    return this.width * this.height;
+  }
 };
 
 var rect = Object.create(rectangle);
@@ -69,7 +70,7 @@ var rect = Object.create(rectangle);
 var rectangle = Object.create(Object.prototype);
 
 rectangle.area = function () {
-    return this.width * this.height;
+  return this.width * this.height;
 };
 ```
 
@@ -91,14 +92,14 @@ console.log(rect.area());
 
 ```javascript
 function getProperty (object, property) {
-    if (!object.hasOwnProperty(property)) {
-        var prototype = Object.getPrototypeOf(object);
-        if (prototype) {
-            return getProperty(prototype, property);
-        }
-    } else {
-        return object[property];
+  if (!object.hasOwnProperty(property)) {
+    var prototype = Object.getPrototypeOf(object);
+    if (prototype) {
+      return getProperty(prototype, property);
     }
+  } else {
+    return object[property];
+  }
 }
 ```
 
@@ -127,20 +128,20 @@ function getProperty (object, property) {
 
 ```javascript
 Object.prototype.combine = function () {
-    var object = Object.create(this),
-        length = arguments.length,
-        index = length;
-        
-    while (index) {
-        var combineObject = arguments[length - (index--)];
-        for (var property in combineObject) {
-            if (combineObject.hasOwnproperty(property) && 
-                    typeof object[property] === 'undefined') {
-                object[property] = combineObject[property];
-            }
-        }
+  var object = Object.create(this),
+    length = arguments.length,
+    index = length;
+      
+  while (index) {
+    var combineObject = arguments[length - (index--)];
+    for (var property in combineObject) {
+      if (combineObject.hasOwnproperty(property) && 
+            typeof object[property] === 'undefined') {
+        object[property] = combineObject[property];
+      }
     }
-    return object;
+  }
+  return object;
 };
 ```
 

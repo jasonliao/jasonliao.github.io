@@ -44,8 +44,8 @@ o.whatever();
 当我们把一个函数当作构造器的时候调用的时候，我们用 `new` 这个关键字
 
 ```javascript
-function Creep ()　{
-      return this;
+function Creep () {
+  return this;
 }
 var creep = new Creep();
 ```

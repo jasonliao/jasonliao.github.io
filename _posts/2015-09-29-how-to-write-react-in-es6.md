@@ -28,7 +28,7 @@ Reflux 给我们封装了一些方法和属性，可以让我们的数据和操�
 
 从 React 0.13 开始，我们就都可以用 ES6 的语法来写 React 的组件了，具体看[这里](https://facebook.github.io/react/docs/reusable-components.html)，但很多的教程都还是运用 `React.createClass()` 的方式，当然啦，`React.createClass()` 也有他的好处，例如 `Autobinding` `mixins` 等等，但我觉得用 ES6 写会更优雅，但把原来的改写就有很多坑，所以现在就来一个一个填吧
 
-##1. We don't need `componentWillMount` any more
+## 1. We don't need `componentWillMount` any more
 
 `componentWillMount` 这个方法已经不再需要了，我们把渲染组件之前要做的事情放在 `constructor` 里，例如如果我们设置我们的 `state`，我们可以这样
 
@@ -43,80 +43,80 @@ class ExampleComponent extends React.Component {
 }
 ```
 
-##2. Autobinding and No Autobinding
+## 2. Autobinding and No Autobinding
 
 改用了 ES6 的语法之后，函数的 `this` 不再是绑定在了自身的实例身上，这里可以有两个方法去解决这个问题
 
-###1. use arrow function `=>`
+ 1. use arrow function `=>`
 
-当你在组件里写的方法是用 arrow function，那么 `this` 就会自动绑在实例身上，后面调用方法的时候，就可以直接调用了
+    当你在组件里写的方法是用 arrow function，那么 `this` 就会自动绑在实例身上，后面调用方法的时候，就可以直接调用了
 
-```javascript
-class ExampleComponent extends React.Component {
-  constructor (props) {
-    super(props);
-  }
-  _handleClick: () => {
-    console.log(this); // this is an ExampleComponent
-  }
-  render () { 
-    return <div onClick={this._handleClick}>Hello, Reactr!</div>;
-  }
-}
-```
+    ```javascript
+    class ExampleComponent extends React.Component {
+      constructor (props) {
+        super(props);
+      }
+      _handleClick: () => {
+        console.log(this); // this is an ExampleComponent
+      }
+      render () { 
+        return <div onClick={this._handleClick}>Hello, Reactr!</div>;
+      }
+    }
+    ```
 
-###2. use `bind(this)`
+ 2. use `bind(this)`
 
-还有一种就是利用 `bind(this)` 
+    还有一种就是利用 `bind(this)` 
 
-```javascript
-// use bind(this) when called
-class ExampleComponent extends React.Component {
-  constructor (props) {
-    super(props);
-  }
-  _handleClick () {
-    console.log(this); // this is an ExampleComponent
-  }
-  render () { 
-    return <div onClick={this._handleClick.bind(this)}>Hello, Reactr!</div>;
-  }
-}
+    ```javascript
+    // use bind(this) when called
+    class ExampleComponent extends React.Component {
+      constructor (props) {
+        super(props);
+      }
+      _handleClick () {
+        console.log(this); // this is an ExampleComponent
+      }
+      render () { 
+        return <div onClick={this._handleClick.bind(this)}>Hello, Reactr!</div>;
+      }
+    }
 
-// use bind(this) in constructor
-class ExampleComponent extends React.Component {
-  constructor (props) {
-    super(props);
-    this._handleClick = this._handleClick.bind(this);
-  }
-  _handleClick () {
-    console.log(this); // this is an ExampleComponent
-  }
-  render () { 
-    return <div onClick={this._handleClick}>Hello, Reactr!</div>;
-  }
-}
-```
+    // use bind(this) in constructor
+    class ExampleComponent extends React.Component {
+      constructor (props) {
+        super(props);
+        this._handleClick = this._handleClick.bind(this);
+      }
+      _handleClick () {
+        console.log(this); // this is an ExampleComponent
+      }
+      render () { 
+        return <div onClick={this._handleClick}>Hello, Reactr!</div>;
+      }
+    }
+    ```
 
-##3. No Mixins
+## 3. No Mixins
 
 ES6 不支持 mixins 了，but [Mixins Are Dead. Long Live Composition](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750)
 
 Reflux 官方的 TodoApp 有 mixins，那我们怎么来修改他呢
 
-###1. TodoApp 里的 `mixins: [Reflux.connect(TodoStores,"list")]`
+ 1. TodoApp 里的 `mixins: [Reflux.connect(TodoStores,"list")]`
 
-`Reflux.connect` 方法主要作用是当 TodoStores 执行 `this.toggle()` 方法的时候，TodoApp 就会重新 `setState` 来更新数据，所以我们可以用 TodoStores 的 `listen` 方法来监听，再调用 TodoApp 自身的 `onStateChange` 方法
+    `Reflux.connect` 方法主要作用是当 TodoStores 执行 `this.toggle()` 方法的时候，TodoApp 就会重新 `setState` 来更新数据，所以我们可以用 TodoStores 的 `listen` 方法来监听，再调用 TodoApp 自身的 `onStateChange` 方法
 
-###2. TodoMain 里的 `mixins: [ ReactRouter.State ]`
+ 2. TodoMain 里的 `mixins: [ ReactRouter.State ]`
 
-这个在 react-router 1.0.0 之后就不再有了，[UPGRADE_GUIDE](https://github.com/rackt/react-router/blob/master/UPGRADE_GUIDE.md)也写得很明白了，只要把 `switch` 里的 `getPath()` 改成 `this.props.location.pathname` 就可以了
+    这个在 react-router 1.0.0 之后就不再有了，[UPGRADE_GUIDE](https://github.com/rackt/react-router/blob/master/UPGRADE_GUIDE.md)也写得很明白了，只要把 `switch` 里的 `getPath()` 改成 `this.props.location.pathname` 就可以了
 
-###3. TodoItem 里的 `mixins: [React.addons.LinkedStateMixin]`
+ 3. TodoItem 里的 `mixins: [React.addons.LinkedStateMixin]`
 
-这个是用来做 `input` 数据双向绑定的，不用 mixins 怎么做，React 的[官方文档](https://facebook.github.io/react/docs/two-way-binding-helpers.html)也写得很清楚
+    这个是用来做 `input` 数据双向绑定的，不用 mixins 怎么做，React 的[官方文档](https://facebook.github.io/react/docs/two-way-binding-helpers.html)也写得很清楚
 
-可以对比看看 [我的代码](https://github.com/L-movingon/simple-todo-with-react-and/tree/master/reflux/javascripts) 和 [官方的代码](https://github.com/reflux/refluxjs-todo/tree/master/js)
+    可以对比看看 [我的代码](https://github.com/L-movingon/simple-todo-with-react-and/tree/master/reflux/javascripts) 和 [官方的代码](https://github.com/reflux/refluxjs-todo/tree/master/js)
 
 # Use React-Router 1.0.0-rc1
 

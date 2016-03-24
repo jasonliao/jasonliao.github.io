@@ -14,14 +14,19 @@
 }
 
 .mod-postmain h1 {
-  margin-top: 40px;
+  font-size: 250%;
+  margin: 40px 0 20px 0;
   font-weight: normal;
+}
+
+.mod-postmain h2 {
+  font-size: 200%;
 }
 
 .mod-postmain p {
   font-size: 105%;
 }
-.mod-postmain code {
+.mod-postmain code { /* `this` */
   margin: 0 5px;
   padding:0 5px;
   background: #efefef;
@@ -44,15 +49,14 @@
 }
 
 .mod-postmain h2, .mod-postmain h3, .mod-postmain h4, .mod-postmain h5, .mod-postmain h6, .mod-postmain p, .mod-postmain ul, .mod-postmain ol, .mod-postmain dt, .mod-postmain table, .mod-postmain blockquote, .mod-postmain ins, .mod-postmain iframe {
-  margin-top: 20px;
   font-weight: normal;
   line-height: 2;
 }
 
 .mod-postmain .highlight {
+  line-height: 18px;
+  padding: 10px;
   border-radius: 5px;
-  margin-top: 20px;
-  font-weight: normal;
 }  
 
 .mod-postmain blockquote {
@@ -65,4 +69,9 @@
 
 #disqus_thread {
   margin-top: 50px;
+}
+
+.mod-postmain ul,
+.mod-postmain ol {
+  padding-left: 20px;
 }
