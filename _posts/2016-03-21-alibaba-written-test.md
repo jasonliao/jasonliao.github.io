@@ -176,7 +176,7 @@ summary: 阿里巴巴 UC 移动事业群笔试总结
 
     [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)，简单清晰且 ES6 支持
 
-## 总结
+## Summary
 
 嗯嗯，大概就是这么多，大概就是这么个意思，大概就是这么个顺序
 
