@@ -105,6 +105,18 @@ Array.prototype.binarySearch = function (low, high, key) {
 - **DOM 嵌套很深，对性能有一定影响**
 - **GPL**
 
+> 你有写过后台语言的代码吗？例如 PHP，C++ 这些
+
+没有，只是会有一点点的 Node，写过一些小型的应用
+
+> 那 Node 你是用什么框架呢
+
+Express
+
+> 那你知道 Node 异步编程的原理吗
+
+讲了一下 callback，promise，还有 event loop
+
 > 在科研团队里开发和在外面的公司开发有什么不一样
 
 就说在科研团队里开发可能更加注重的是功能的实现，但是在外面公司的开发不仅仅要考虑这些，还要考虑性能，用户体验等等这些
