@@ -3,7 +3,7 @@ layout: post
 category: cpp
 title: const and constexpr
 date: 2016-04-22
-summary: "`const` 和 `constexpr` 的区别和使用场景"
+summary: const 和 constexpr 的区别和使用场景
 ---
 
 C++11 之后新增了 `constexpr`，它和我们常常看到的 `const` 有什么区别呢？它们分别运用在哪些场景呢？
