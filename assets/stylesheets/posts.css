@@ -14,13 +14,22 @@
 }
 
 .mod-postmain h1 {
-  font-size: 250%;
-  margin: 40px 0 20px 0;
+  font-size: 237%;
+  margin: 20px 0;
   font-weight: normal;
 }
 
 .mod-postmain h2 {
-  font-size: 200%;
+  font-size: 207%;
+  margin: 20px 0;
+  font-weight: normal;
+}
+
+
+.mod-postmain h3 {
+  font-size: 187%;
+  margin: 20px 0;
+  font-weight: normal;
 }
 
 .mod-postmain p {
@@ -48,7 +57,7 @@
   text-decoration: none;
 }
 
-.mod-postmain h2, .mod-postmain h3, .mod-postmain h4, .mod-postmain h5, .mod-postmain h6, .mod-postmain p, .mod-postmain ul, .mod-postmain ol, .mod-postmain dt, .mod-postmain table, .mod-postmain blockquote, .mod-postmain ins, .mod-postmain iframe {
+.mod-postmain p, .mod-postmain ul, .mod-postmain ol, .mod-postmain dt, .mod-postmain table, .mod-postmain blockquote, .mod-postmain ins, .mod-postmain iframe {
   font-weight: normal;
   line-height: 2;
 }
