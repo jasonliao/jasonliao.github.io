@@ -10,11 +10,9 @@
   font-size: 100%;
 }
 
-.socicon {
-  font-family: 'socicon' !important;
-  font-size: 25px;
+.fa {
+  font-size: 30px !important;
   margin: 10px 15px;
-  display: inline-block;
 }
 
 .mod-social {
