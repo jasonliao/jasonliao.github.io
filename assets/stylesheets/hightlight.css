@@ -4,7 +4,7 @@
 .highlight pre { padding:20px; white-space:pre; word-wrap:normal; _word-wrap:break-word; margin: 0;}
 .highlight .hll { background-color: #49483e; }
 .highlight .c { color: #75715e; } /* Comment */
-.highlight .err { color: #960050; background-color: #1e0010; } /* Error */
+.highlight .err { color: #a6e22e; } /* Error */
 .highlight .k { color: #66d9ef; } /* Keyword */
 .highlight .l { color: #ae81ff; } /* Literal */
 .highlight .n { color: #f8f8f2; } /* Name */
