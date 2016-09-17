@@ -8,7 +8,7 @@ summary: 开始接触Node.js!!
 
 看完了《node.js入门》这本书，然后远成介绍看《node.js in action》，现在看到了第六章。
 
-书在第二章的时候介绍了怎么写一个 chatroom ，里面也有完整的代码，这里就不再说了，你也可以来 [这里](https://github.com/L-movingon/Everything-I-Learn/tree/master/nodejs/node-js-in-action/chatrooms) 跑一下，看一下
+书在第二章的时候介绍了怎么写一个 chatroom ，里面也有完整的代码，这里就不再说了，你也可以来 [这里](https://github.com/jasonliao/Everything-I-Learn/tree/master/nodejs/node-js-in-action/chatrooms) 跑一下，看一下
 
 下面介绍一下我是怎么学习 node.js 的
 

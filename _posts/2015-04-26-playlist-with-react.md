@@ -28,7 +28,7 @@ What we need is  [Thinking in React](https://facebook.github.io/react/blog/2013/
 
 # Playlist with React.js
 
-完整代码在 [这里](https://github.com/L-movingon/CodeBlocks/tree/master/Reactjs)
+完整代码在 [这里](https://github.com/jasonliao/Everything-I-Learn/tree/master/Reactjs/playlist)
 
 ![playlist]({{ site.url }}/assets/images/playlist.jpg)
 

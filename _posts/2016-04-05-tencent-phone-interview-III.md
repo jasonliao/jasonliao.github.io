@@ -50,7 +50,7 @@ Google，去论坛，找 issues，提 issues
 
 **那现在我们就来复习一下二分查找吧**
 
-**我们都知道二分查找要在有序的序列的基础之上，所以在二分查找之前，肯定要排序的，这一题又问了排序，又问了查找呀。[八大排序](https://github.com/L-movingon/prepare-for-interview/blob/master/Data-Structure/sort.md) 之前已经总结过了，现在就让我们直接来看二分查找吧**
+**我们都知道二分查找要在有序的序列的基础之上，所以在二分查找之前，肯定要排序的，这一题又问了排序，又问了查找呀。[八大排序](https://github.com/jasonliao/prepare-for-interview/blob/master/Data-Structure/sort.md) 之前已经总结过了，现在就让我们直接来看二分查找吧**
 
 **其实二分查找的原理很简单，我们用 JavaScript 写一个最简单的实现**
 
@@ -73,7 +73,7 @@ Array.prototype.binarySearch = function (low, high, key) {
 
 > 那你说说 JavaScript 里的闭包
 
-讲了一下闭包的实例使用的例子，如保存私有变量还有函数式编程里的 [Curry 和 Partial Application](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/currying-vs-partial-application.md)
+讲了一下闭包的实例使用的例子，如保存私有变量还有函数式编程里的 [Curry 和 Partial Application](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/currying-vs-partial-application.md)
 
 > 那你再说说 JavaScript 中的 `this`
 
@@ -150,7 +150,7 @@ Express
 
 **除此之外，栈还可以实现数制的转换，符号的匹配还有前缀后缀表达式之类的转换**
 
-**而堆则常常用于 [堆排序](https://github.com/L-movingon/prepare-for-interview/blob/master/Data-Structure/sort.md#%E5%A0%86%E6%8E%92%E5%BA%8F)**
+**而堆则常常用于 [堆排序](https://github.com/jasonliao/prepare-for-interview/blob/master/Data-Structure/sort.md#%E5%A0%86%E6%8E%92%E5%BA%8F)**
 
 > 嗯嗯，你对前端的知识，还有设计模式都有都有了解，但是在这方面不是很熟悉呀
 

@@ -8,7 +8,7 @@ summary: 学习怎样构建一个简单的应用通过 React, React-Routet, Expr
 
 [Universal React](https://24ways.org/2015/universal-react/) in [24 WAYS](https://24ways.org/) by [Jack Franklin](https://github.com/jackfranklin) 这篇文章教我们如何搭建一个简单的应用通过 React, React-Router, Express 和 ejs
 
-下面是我在学的过程中遇到的一些问题和总结，还有一点点的改写，完整的代码在原文也有，我改写过后的就在 [这里](https://github.com/L-movingon/react-and-node-are-perfect-gifts/tree/master/universal-react)
+下面是我在学的过程中遇到的一些问题和总结，还有一点点的改写，完整的代码在原文也有，我改写过后的就在 [这里](https://github.com/jasonliao/react-and-node-are-perfect-gifts/tree/master/universal-react)
 
 # .babelrc
 

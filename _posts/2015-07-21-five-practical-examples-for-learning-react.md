@@ -8,7 +8,7 @@ summary: some note when I rewrite that 5 simple react examples with ES6
 
 [click here!](http://tutorialzine.com/2014/07/5-practical-examples-for-learning-facebooks-react-framework/)
 
-I rewrite all the demos with ES6, some note here, [source code here](https://github.com/L-movingon/5-practical-examples-for-learning-react)
+I rewrite all the demos with ES6, some note here, [source code here](https://github.com/jasonliao/5-practical-examples-for-learning-react)
 
 If you wanna run the app, you need [npm](http://npmjs.org/) and also [webpack](http://webpack.github.io/). Enter which one you like and
 

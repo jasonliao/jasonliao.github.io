@@ -139,7 +139,7 @@ summary: 阿里巴巴 UC 移动事业群笔试总结
 
  7. 你了解 JavaScript 中的继承吗？请列举一些，并说出你推荐哪种
 
-    我列举了一些 [类式继承](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/classical-inheritance.md) 和 [原型继承](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md)，然后我更推荐原型继承
+    我列举了一些 [类式继承](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/classical-inheritance.md) 和 [原型继承](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md)，然后我更推荐原型继承
 
     > Q: When is classical inheritance an appropriate choice?
 

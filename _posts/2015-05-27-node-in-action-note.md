@@ -62,4 +62,4 @@ node ./bin/www
 
 网上说，学习 Node.js 要整天看文档，因为更新得很快 [strongloop/expresss](https://github.com/strongloop/express#quick-start)
 
-[这里](https://github.com/L-movingon/Everything-I-Learn/tree/master/nodejs/node-js-in-action/express/photo)就是我用 Express 4.x 写的一个相当于书中的 Photo 的实例，如果你也被书坑了，你也想把 ejs 换成 jade，都可以看看 :)
+[这里](https://github.com/jasonliao/Everything-I-Learn/tree/master/nodejs/node-js-in-action/express/photo)就是我用 Express 4.x 写的一个相当于书中的 Photo 的实例，如果你也被书坑了，你也想把 ejs 换成 jade，都可以看看 :)

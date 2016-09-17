@@ -10,37 +10,37 @@ summary: 从这篇文章引出的一些知识点的总结和整理
 
 # 1. Can you name two programming paradigms important for JavaScript app developers?
 
-JavaScript 是一种支持多种范式语言(multi-paradigm language,也就是说是多种编程方式，或者叫风格)，可以结合面向对象进行指令式／程序编程，还可以函数式编程。JavaScript 用 [原型继承](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md) 来实现面向对象编程
+JavaScript 是一种支持多种范式语言(multi-paradigm language,也就是说是多种编程方式，或者叫风格)，可以结合面向对象进行指令式／程序编程，还可以函数式编程。JavaScript 用 [原型继承](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md) 来实现面向对象编程
 
 ## Good to hear:
 
-- [Prototypal inheritance](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md) (also: prototypes, OLOO).
-- [Functional programming](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/functional-programming.md) (also: closures, [first class functions](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/functional-programming.md#first-class-functions), lambdas).
+- [Prototypal inheritance](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md) (also: prototypes, OLOO).
+- [Functional programming](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/functional-programming.md) (also: closures, [first class functions](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/functional-programming.md#first-class-functions), lambdas).
 
 *lambdas: anonymous functions*
 
-# 2. What is [functional programming](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/functional-programming.md)?
+# 2. What is [functional programming](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/functional-programming.md)?
 
 函数式编程是 JavaScript 中一个很重要的概念，越来越多的函数式编程的特征都被添加到 ES5 ES6 中
 
 ## Good to hear:
 
-- [Pure functions](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/functional-programming.md#pure-functions) / function purity.
+- [Pure functions](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/functional-programming.md#pure-functions) / function purity.
 - Avoid side-effects.
 - Simple function composition.
 - Examples of functional languages: Lisp, ML, Haskell, Erlang, Clojure, Elm, F Sharp, OCaml, etc…
-- Mention of features that support FP: [first-class functions](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/functional-programming.md#first-class-functions), higher order functions, functions as arguments/values.
+- Mention of features that support FP: [first-class functions](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/functional-programming.md#first-class-functions), higher order functions, functions as arguments/values.
 
 *higher order functions: a function that takes or returns a function*
 
-# 3. What is [the difference between classical inheritance and prototypal inheritance?](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#classical-inheritance-and-prototypal-inheritance)
+# 3. What is [the difference between classical inheritance and prototypal inheritance?](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#classical-inheritance-and-prototypal-inheritance)
 
 ## Good to hear:
 
 - Classes: create tight coupling or hierarchies/taxonomies.
-- Prototypes: mentions of [concatenative inheritance](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#concatenative-inheritance), [prototype delegation](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#prototype-delegation), [functional inheritance](https://github.com/L-movingon/prepare-for-interview/blob/master/Books/JavaScript-The-Good-Parts/javascript-the-good-parts-part-2.md#how-functional-works), [object composition](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#inheriting-from-multiple-prototypes).
+- Prototypes: mentions of [concatenative inheritance](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#concatenative-inheritance), [prototype delegation](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#prototype-delegation), [functional inheritance](https://github.com/jasonliao/prepare-for-interview/blob/master/Books/JavaScript-The-Good-Parts/javascript-the-good-parts-part-2.md#how-functional-works), [object composition](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#inheriting-from-multiple-prototypes).
 
-# 4. What are the pros and cons of [functional programming](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/functional-programming.md) vs object-oriented programming?
+# 4. What are the pros and cons of [functional programming](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/functional-programming.md) vs object-oriented programming?
 
 Get 唔到，睇原文
 
@@ -49,19 +49,19 @@ Get 唔到，睇原文
 ## Good to hear:
 - **NEVER**
 
-[Classical Inheritance and Prototypal Inheritance](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#classical-inheritance-and-prototypal-inheritance)
+[Classical Inheritance and Prototypal Inheritance](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#classical-inheritance-and-prototypal-inheritance)
 
 # 6.When is prototypal inheritance an appropriate choice?
 
 > In JavaScript, prototypal inheritance is simpler & more flexible than classical inheritance.
 
-[Prototypal Inheritance](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md) 不仅仅有一种类型
+[Prototypal Inheritance](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md) 不仅仅有一种类型
 
-- [**Delegation**](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#prototype-delegation) (i.e., the prototype chain)
-- [**Concatenative**](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#concatenative-inheritance) (i.e. mixins, `Object.assign`)
-- [**Functional**](https://github.com/L-movingon/prepare-for-interview/blob/master/Books/JavaScript-The-Good-Parts/javascript-the-good-parts-part-2.md#how-functional-works) (Not to be confused with functional programming. A function used to create a closure for private state/encapsulation)
+- [**Delegation**](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#prototype-delegation) (i.e., the prototype chain)
+- [**Concatenative**](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#concatenative-inheritance) (i.e. mixins, `Object.assign`)
+- [**Functional**](https://github.com/jasonliao/prepare-for-interview/blob/master/Books/JavaScript-The-Good-Parts/javascript-the-good-parts-part-2.md#how-functional-works) (Not to be confused with functional programming. A function used to create a closure for private state/encapsulation)
 
-其实这三种类型都有最适合的应用场景，[Delegation](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#prototype-delegation) 一般是用来存放我们的方法，因为这些方法一般比较通用，不会常常修改。而 [Concatenative](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#concatenative-inheritance)  可以让我们结合多个原型的属性和方法，可以说成是多继承。最常见的就是我们的对象要继承我们的 `EventEmitter`，用来添加事件监听和事件驱动，例如 Flux 里的 Store。而 [Functional](https://github.com/L-movingon/prepare-for-interview/blob/master/Books/JavaScript-The-Good-Parts/javascript-the-good-parts-part-2.md#how-functional-works) 则可以存储我们的私有变量和私有方法
+其实这三种类型都有最适合的应用场景，[Delegation](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#prototype-delegation) 一般是用来存放我们的方法，因为这些方法一般比较通用，不会常常修改。而 [Concatenative](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/prototypal-inheritance.md#concatenative-inheritance)  可以让我们结合多个原型的属性和方法，可以说成是多继承。最常见的就是我们的对象要继承我们的 `EventEmitter`，用来添加事件监听和事件驱动，例如 Flux 里的 Store。而 [Functional](https://github.com/jasonliao/prepare-for-interview/blob/master/Books/JavaScript-The-Good-Parts/javascript-the-good-parts-part-2.md#how-functional-works) 则可以存储我们的私有变量和私有方法
 
 # 7. What does “favor composition over class inheritance” mean?
 
@@ -88,7 +88,7 @@ Get 唔到，睇原文
 
 同步编程指编程的执行会受条件和功能调用的限制，代码总是从顶至底执行，当遇到网络请求和磁盘I / O的时候，就会阻塞
 
-异步编程是指程序在 [Event Loop](https://github.com/L-movingon/prepare-for-interview/blob/master/JavaScript/event-loop.md) 里面跑，当我们有请求，有阻塞的时候，代码不会停在那里等结果，而是继续往下执行。当结果返回了，其他代码也执行完了的时候，就可以执行我们的回调函数，这样，单线程也能解决很多并发的问题
+异步编程是指程序在 [Event Loop](https://github.com/jasonliao/prepare-for-interview/blob/master/JavaScript/event-loop.md) 里面跑，当我们有请求，有阻塞的时候，代码不会停在那里等结果，而是继续往下执行。当结果返回了，其他代码也执行完了的时候，就可以执行我们的回调函数，这样，单线程也能解决很多并发的问题
 
 这在 JavaScript 中很重要是因为
 

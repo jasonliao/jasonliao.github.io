@@ -38,7 +38,7 @@ summary: 腾讯内推第二轮电话面试题目和总结
 
  7. **那你说说 HTML5 有哪些新增的东西吧**
 
-    然后我就根据我之前总结的一些 [关于 HTML5](https://github.com/L-movingon/prepare-for-interview/blob/master/HTML/something-about-html5.md) 的东西给他说，主要从语义化的标签和新的 API 讲，这部分讲得还挺久的。
+    然后我就根据我之前总结的一些 [关于 HTML5](https://github.com/jasonliao/prepare-for-interview/blob/master/HTML/something-about-html5.md) 的东西给他说，主要从语义化的标签和新的 API 讲，这部分讲得还挺久的。
 
     *(我忘记是不是这个时候了，我讲完之后。面试官突然停止发问了，可能在做其他事情)*
 

@@ -172,7 +172,7 @@ export default App;
 </body>
 ```
 
-还要创建 `todo.js` 和 `todostore.js`，这些不涉及到 ng2 的内容，这里就省略了，但可以在 [这里](https://github.com/L-movingon/Everything-I-Learn/tree/master/angular2/angular2-es6/src/services) 看到这两个文件的实现，主要是操作 [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) 的一些接口
+还要创建 `todo.js` 和 `todostore.js`，这些不涉及到 ng2 的内容，这里就省略了，但可以在 [这里](https://github.com/jasonliao/Everything-I-Learn/tree/master/angular2/angular2-es6/src/services) 看到这两个文件的实现，主要是操作 [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) 的一些接口
 
 好了，现在就来填充 `app.html` 和 `app.js` 吧。根据 Todo App 可以知道，首先有一个输入框，给我们新增 todo
 

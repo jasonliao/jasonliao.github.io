@@ -114,7 +114,7 @@ const Aquarium ＝ ({ species }) => (
 Flux 是配合 React 推出来的单向数据流架构，如果你想了解 Flux 具体是个什么东西，下面两篇 post 可能可以帮到你(卖了个广告)
 
 - [Getting To Know Flux, the React.js Architecture](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture) - Ken Wheeler
-- [Simple TODO with React and Flux](https://github.com/L-movingon/simple-todo-with-react-and/tree/master/flux) - Jason Liao
+- [Simple TODO with React and Flux](https://github.com/jasonliao/simple-todo-with-react-and/tree/master/flux) - Jason Liao
 
 但我认为更应该使用 Redux 去管理你的数据流。
 

@@ -57,11 +57,11 @@ summary: Understand me via this
 
  1. **simple-todo-with-react-and**
 
-    该 [仓库托管在 GitHub](https://github.com/L-movingon/simple-todo-with-react-and) 上，是运用 React 分别配合 Flux、Reflux 和 Redux 来做成一个简单的 TODO App，从中学习这三者的区别和各自的优缺点
+    该 [仓库托管在 GitHub](https://github.com/jasonliao/simple-todo-with-react-and) 上，是运用 React 分别配合 Flux、Reflux 和 Redux 来做成一个简单的 TODO App，从中学习这三者的区别和各自的优缺点
 
  2. **isomorphic-react-workflow-boilerplate**
 
-    [这个模板](https://github.com/L-movingon/isomorphic-react-workflow-boilerplate) 可以让你更加方便地使用 React，Redux 开发一个简单的应用，你可以使用最新的 ES6 语法，也有 React-Hot-Loader 解决你不断手动刷新浏览器麻烦，更多详情和用法可以查看 [README](https://github.com/L-movingon/isomorphic-react-workflow-boilerplate#isomorphic-react-workflow-boilerplate)
+    [这个模板](https://github.com/jasonliao/isomorphic-react-workflow-boilerplate) 可以让你更加方便地使用 React，Redux 开发一个简单的应用，你可以使用最新的 ES6 语法，也有 React-Hot-Loader 解决你不断手动刷新浏览器麻烦，更多详情和用法可以查看 [README](https://github.com/jasonliao/isomorphic-react-workflow-boilerplate#isomorphic-react-workflow-boilerplate)
 
  3. **l-movingon.github.io**
 
@@ -71,5 +71,5 @@ summary: Understand me via this
 
 - Tel: 18826233070
 - Email: lmovingon2014@gmail.com
-- GitHub: [https://github.com/L-movingon](https://github.com/L-movingon)
-- Blog: [https://l-movingon.github.io](https://l-movingon.github.io)
+- GitHub: [https://github.com/jasonliao](https://github.com/jasonliao)
+- Blog: [http://jasonliao.me](http://jasonliao.me)

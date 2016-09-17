@@ -6,9 +6,9 @@ date: 2015-09-29
 summary: 学习 Reflux 的时候，对于用 ES6 写 React 的一些总结
 ---
 
-这个是 [simple Todo with React and](https://github.com/L-movingon/simple-todo-with-react-and) 的第二部 - Reflux
+这个是 [simple Todo with React and](https://github.com/jasonliao/simple-todo-with-react-and) 的第二部 - Reflux
 
-第一部可以看 [simple Todo with React and Flux](https://github.com/L-movingon/simple-todo-with-react-and/tree/master/flux) 也可以看 [学习flux的一些浅显理解](http://react-china.org/t/flux/1797)
+第一部可以看 [simple Todo with React and Flux](https://github.com/jasonliao/simple-todo-with-react-and/tree/master/flux) 也可以看 [学习flux的一些浅显理解](http://react-china.org/t/flux/1797)
 
 Reflux 相对 Flux 来说，真的是简单很多，好理解很多。[官方API](https://github.com/reflux/refluxjs) 和很多开发者的分享也都说得很明白了。所以我就简单讲讲我的理解
 
@@ -116,7 +116,7 @@ Reflux 官方的 TodoApp 有 mixins，那我们怎么来修改他呢
 
     这个是用来做 `input` 数据双向绑定的，不用 mixins 怎么做，React 的[官方文档](https://facebook.github.io/react/docs/two-way-binding-helpers.html)也写得很清楚
 
-    可以对比看看 [我的代码](https://github.com/L-movingon/simple-todo-with-react-and/tree/master/reflux/javascripts) 和 [官方的代码](https://github.com/reflux/refluxjs-todo/tree/master/js)
+    可以对比看看 [我的代码](https://github.com/jasonliao/simple-todo-with-react-and/tree/master/reflux/javascripts) 和 [官方的代码](https://github.com/reflux/refluxjs-todo/tree/master/js)
 
 # Use React-Router 1.0.0-rc1
 
@@ -134,6 +134,6 @@ Reflux 官方的 TodoApp 用的 react-router 是 0.13 版的，但现在出到 1
 
 希望这篇东西可以帮到那些也想用 ES6 写 React，但总是被坑的朋友们，有问题也可以一起多加讨论，共同学习
 
-想看完整代码的可以到 [simple-todo-with-react-and-reflux](https://github.com/L-movingon/simple-todo-with-react-and/tree/master/reflux) 
+想看完整代码的可以到 [simple-todo-with-react-and-reflux](https://github.com/jasonliao/simple-todo-with-react-and/tree/master/reflux) 
 
 如有错误，欢迎指出 :)

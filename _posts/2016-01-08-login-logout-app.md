@@ -8,14 +8,14 @@ summary: 用 React, Redux, React-Router, Express 构建的小应用
 
 [Universal React](https://24ways.org/2015/universal-react/) 这篇 Post 让我们知道了怎么在服务器端渲染我们的组件，还让我们知道了怎么在除了第一次请求之外，用 react-router 来在客户端处理路由的跳转，减少请求，不仅可以减少等待时间，还可以减轻服务器端的负担，带来更好的用户体验
 
-我上两篇的 [Post](https://l-movingon.github.io/posts/2015-12-30-universal-react.html) 对整个过程和实现做了一些总结和笔记，但是却想把 redux 也结合起来，然后就想到了这个 [Login-Logout App](https://github.com/L-movingon/react-and-node-are-perfect-gifts/tree/master/login-logout-app)，现在就让我们来看看在实现这个 App 的时候，遇到的问题和对 universal react 更深刻的一点理解
+我上两篇的 [Post](https://l-movingon.github.io/posts/2015-12-30-universal-react.html) 对整个过程和实现做了一些总结和笔记，但是却想把 redux 也结合起来，然后就想到了这个 [Login-Logout App](https://github.com/jasonliao/react-and-node-are-perfect-gifts/tree/master/login-logout-app)，现在就让我们来看看在实现这个 App 的时候，遇到的问题和对 universal react 更深刻的一点理解
 
 # How to Use 
 
-如果你想玩玩这个 [Login-Logout App](https://github.com/L-movingon/react-and-node-are-perfect-gifts/tree/master/login-logout-app)，可以这样
+如果你想玩玩这个 [Login-Logout App](https://github.com/jasonliao/react-and-node-are-perfect-gifts/tree/master/login-logout-app)，可以这样
 
 ```bash
-$ git clone git@github.com:L-movingon/react-and-node-are-perfect-gifts.git
+$ git clone git@github.com:jasonliao/react-and-node-are-perfect-gifts.git
 $ cd login-logout-app & npm install
 
 $ webpack & npm start
