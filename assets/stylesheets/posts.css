@@ -42,6 +42,7 @@
   border: 1px solid #e9e9e9;
   border-radius: 5px;
   line-height: 1.4;
+  font-family: consolas, monospace;
 }
 
 .mod-postmain p img {

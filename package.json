@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "blog",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonliao/jasonliao.github.io.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Jason Liao <lmovingon2014@gmail.com> (https://github.com/jasonliao)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonliao/jasonliao.github.io/issues"
+  },
+  "homepage": "https://jasonliao.github.io",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4"
+  }
+}

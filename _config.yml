@@ -24,4 +24,4 @@ paginate_path: 'page:num'
 
 source: .
 
-exclude: [README.md, node_modules, gulpfile.js, package.json, _site]
+exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json', '_site']

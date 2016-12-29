@@ -1,9 +1,9 @@
 ---
 layout: post
-category: Fackbook
-title: Something About Fackbook CANVAS
+category: Facebook
+title: Something About Facebook CANVAS
 date: 2016-04-21
-summary: 初次接触 Fackbook CANVAS，怎么为自己打的一手好广告
+summary: 初次接触 Facebook CANVAS，怎么为自己打的一手好广告
 ---
 
 ## Facebook CANVAS
@@ -45,21 +45,21 @@ Ad 这里就是真正的创作你的广告的时候了，这里有两种格式�
 
 > Create a Facebook Page to show your ads in News Feed
 
-这是什么意思呢？Fackbook Page 又是什么呢？
+这是什么意思呢？Facebook Page 又是什么呢？
 
-刚刚说了，广告的展示平台决定了广告的格式和创作，如果你的广告要在移动端或者新闻提要中出现，那么就要用 Fackbook Page 作为载体，如果你的广告仅仅想出现在 Desktop Right Column，也就是刚刚展示平台的最后一个，那么 Fackbook 的右侧栏就是你广告的载体
+刚刚说了，广告的展示平台决定了广告的格式和创作，如果你的广告要在移动端或者新闻提要中出现，那么就要用 Facebook Page 作为载体，如果你的广告仅仅想出现在 Desktop Right Column，也就是刚刚展示平台的最后一个，那么 Facebook 的右侧栏就是你广告的载体
 
 如果你只选择了这个，那么你只能选择第一个格式，输入标题，文字还有一张图片，完成一个简单的广告创作
 
 但我们要的不仅仅是这样，还记得 [CANVAS](https://canvas.facebook.com/) 上高大上的 demo 吗？
 
-## Fackbook Page
+## Facebook Page
 
-Fackbook Page 用我们很熟悉的东西去形容就是一个公众号，而我们刚刚的 Ads 就像是公众号里的一篇篇文章。文章推送过来的时候，会有一个标题，一张图片和一段或介绍或总结的文字，这就类似于 Ad Creative 里的 Headline, Media 和 Text。而当我们点进文章，阅读全文的时候，才是我们真正的 Canvas
+Facebook Page 用我们很熟悉的东西去形容就是一个公众号，而我们刚刚的 Ads 就像是公众号里的一篇篇文章。文章推送过来的时候，会有一个标题，一张图片和一段或介绍或总结的文字，这就类似于 Ad Creative 里的 Headline, Media 和 Text。而当我们点进文章，阅读全文的时候，才是我们真正的 Canvas
 
-现在我们先在 Power Editor 里点击 Save to Draft 返回到主界面，刚刚创建时设置的一切一切，都可以在这个主界面里重新设置。然后来创建一个 Fackbook Page 吧！
+现在我们先在 Power Editor 里点击 Save to Draft 返回到主界面，刚刚创建时设置的一切一切，都可以在这个主界面里重新设置。然后来创建一个 Facebook Page 吧！
 
-登上 [Fackbook](https://www.facebook.com/) 你会看到左侧栏有一个 PAGES 底下的 Create Page，Hit it!
+登上 [Facebook](https://www.facebook.com/) 你会看到左侧栏有一个 PAGES 底下的 Create Page，Hit it!
 
 这时又会来到一个选择页面，选择哪个看图片和说明，这样就不多说啦，就像每个公众号都有一个类型，要么推送技术文章，要么发布招聘信息，要么强喂心灵鸡汤
 

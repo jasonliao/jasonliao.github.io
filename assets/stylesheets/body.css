@@ -3,7 +3,7 @@ body {
   line-height: 2;
   color: #000;
   text-align: center;
-  font: 13px/1.231 'Droid Serif',serif,arial,helvetica;
+  font: 13px/1.231 'Droid Serif', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei UI', 'Microsoft YaHei', 'Source Han Sans CN', sans-serif;
   margin: 0;
 }
 
