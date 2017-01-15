@@ -120,7 +120,7 @@ Flux 是配合 React 推出来的单向数据流架构，如果你想了解 Flux
 
 学习 Redux 当然可以去看作者的教学视频 [Getting Started with Redux](https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree?series=getting-started-with-redux)。你会从中了解到很多 Redux 的概念，像 **Single source of truth**，**State is read-only**，**Changes are made with pure functions**。还可以学到一些函数式编程的思想
 
-当然你也可以去 [Egghead.io Redux Course Notes](https://github.com/tayiorbeii/egghead.io_redux_course_notes) 这个 repo 看里面的总结，如果你对英语有恐惧也可以看 [我的总结和笔记](https://l-movingon.github.io/posts/2015-12-28-getting-started-with-redux.html) (再卖个广告)
+当然你也可以去 [Egghead.io Redux Course Notes](https://github.com/tayiorbeii/egghead.io_redux_course_notes) 这个 repo 看里面的总结，如果你对英语有恐惧也可以看 [我的总结和笔记](https://jasonliao.me/posts/2015-12-28-getting-started-with-redux.html) (再卖个广告)
 
 # Universal React
 
