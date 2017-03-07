@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'microsoftyahei';
-  src: url('assets/font/microsoftyahei.ttf') format('truetype');
+  font-family: YH;
+  src: url('../font/microsoftyahei.ttf');
 }
 
 body {
   margin: 0;
   padding: 60px 0;
   background: #525659;
-  font-family: 'MicrosoftYaHei';
+  font-family: YH, "Helvetica Neue", Helvetica, STHeiTi;
 }
 
 ul, p {
