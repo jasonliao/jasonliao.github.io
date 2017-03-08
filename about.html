@@ -6,7 +6,13 @@
   <meta content="telephone=no email=no" name="format-detection">
   <meta name="renderer" content="webkit">
   <title>About | Jason's</title>
-  <link rel="stylesheet" href="assets/stylesheets/about.css">
+  <link rel="stylesheet" href="assets/stylesheets/about.min.css">
+  <script>
+    console.log(window.orientation)
+    if (window.orientation) {
+      location.href = 'assets/jason-liao-front-end-resume.pdf'
+    }
+  </script>
 </head>
 <body>
   <div class="resume-container">
