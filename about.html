@@ -8,7 +8,8 @@
   <title>About | Jason's</title>
   <link rel="stylesheet" href="assets/stylesheets/about.min.css">
   <script>
-    if (window.orientation) {
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
       location.href = 'assets/jason-liao-front-end-resume.pdf'
     }
   </script>
