@@ -1,5 +1,5 @@
 @font-face {
-  font-family: YH;
+  font-family: "Microsoft YaHei";
   src: url('../font/microsoftyahei.ttf');
 }
 
@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 60px 0;
   background: #525659;
-  font-family: YH, "Helvetica Neue", Helvetica, STHeiTi;
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi;
 }
 
 ul, p {
